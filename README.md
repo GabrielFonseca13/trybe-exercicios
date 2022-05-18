@@ -6,3 +6,6 @@ testando o segundo Pull;
 
  ##Estrutura 
 Todos os conteúdos dados em aulas estarão no seu respectivo Pull request.
+
+## teste Fetch
+Testando o Fetch
