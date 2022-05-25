@@ -1,0 +1,27 @@
+h1{
+    font-family: sans-serif;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+body{
+    font-size: 16px;
+    font-style: italic;
+    font-family: fantasy;
+    text-align: center;
+    
+}
+ul{
+    line-height: 50px;
+    text-decoration: underline;
+}
+#fundo-amarelo{
+    background-color: yellow;
+}
+#fundo-vermelho{
+    background-color: red;
+}
+#fundo-marrom{
+    background-color: brown;
+}
