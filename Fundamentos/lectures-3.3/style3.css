@@ -1,3 +1,12 @@
 h1, p, li {
     text-align: center;
+    text-decoration: none;
+}
+li:hover {
+    background-color: #142b65;
+    color: #fff;
+}
+li:active{
+    font-size: 30px;
+    color: coral;
 }
