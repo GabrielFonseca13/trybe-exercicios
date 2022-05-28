@@ -9,6 +9,8 @@
     width: 100px;
     position: absolute;
     z-index: 2;
+    margin-top: 300px;
+    margin-left: 50px;
   }
   
   .baloon {
