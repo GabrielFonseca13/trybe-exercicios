@@ -24,6 +24,8 @@
     font-size: 25px;
     position: absolute;
     z-index: 4;
+    margin-top: 120px;
+    margin-left: 275px;
   }
   
   .bowser {
