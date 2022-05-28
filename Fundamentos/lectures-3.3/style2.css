@@ -16,6 +16,8 @@
   .baloon {
   position: absolute;
   z-index: 3;
+  margin-left: 250px;
+  margin-top: 50px;
   }
   
   .speach {
