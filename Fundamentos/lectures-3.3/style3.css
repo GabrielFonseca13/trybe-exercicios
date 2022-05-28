@@ -1,4 +1,4 @@
-h1, p, li {
+h1, p {
     text-align: center;
     text-decoration: none;
 }
@@ -9,4 +9,9 @@ li:hover {
 li:active{
     font-size: 30px;
     color: coral;
+}
+ol, ul {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
 }
