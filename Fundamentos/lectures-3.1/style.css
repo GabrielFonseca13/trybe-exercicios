@@ -5,7 +5,7 @@
    }
    
    h1 {
-    font-  family: 'montserrat', sans-serif;
+    font-family: 'montserrat', sans-serif;
      }
 
    p , li {
@@ -57,10 +57,54 @@
     }
 
     #header-content{
+      margin-top: 20px;
         max-width: 50%;
-        margin-left: 75px;   ;
-    }
-    
-    #sign-up{
         margin-left: 75px;
+    }
+
+    #text-header{
+      margin-top: 20px;
+      max-width: 80%;
+    }
+
+    #sign-up {
+      margin-top: 40px;
+      margin-left: 75px;
+    }
+
+    #marketing{
+      text-align: center;
+      padding: 70px ;
+    }
+  #marketing-text{
+    max-width: 60%;
+    margin: auto;
+  }
+    .student-content{
+      margin-top: 30px;
+      margin-bottom: 30px;
+     width: 30%;
+     display: inline-block;
+    }
+    #section3{
+      background-color: rgba(232, 228, 228, 0.694);
+    }
+    #section-title3{
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      padding: 70px ;
+    }
+    #section-content{
+      max-width: 50%;
+      text-align: left;
+      display: inline-block;
+      padding: 50px;
+    }
+    #section-image{
+      display: inline-block;
+      margin-left: 10% ;
+    }
+    #section-button{
+      padding: 25px;
     }
