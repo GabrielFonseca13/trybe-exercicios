@@ -1,0 +1,66 @@
+
+   *{
+       margin: 0;
+       padding: 0;
+   }
+   
+   h1 {
+    font-  family: 'montserrat', sans-serif;
+     }
+
+   p , li {
+     color: #475550;
+     font-size: 16px;
+   }
+  
+   .trybe-green {
+     color:#11a36a
+   }
+
+   #main-title {
+    color: #0a7e51;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -1px;     
+   }
+   .section-title{
+     font-size: 28px;
+     line-height: 42 px;
+     font-weight: 600;
+   }
+   .testemonial-name{
+     font-size: 14;
+     line-height: 20px;
+     font-weight: 600;
+     
+   }
+   .picture {
+     border-radius: 100%;
+     }
+
+   .button {
+     background-color: #11a36a;
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+     padding: 12px;
+     border-radius: 8px;
+   }
+
+   #header {
+      background-image: url(./site_trybe/images/smiling-image.jpg);
+      background-position: 50% 25%;
+      background-size: cover;
+      padding: 60px 40PX 30PX;
+    }
+
+    #header-content{
+        max-width: 50%;
+        margin-left: 75px;   ;
+    }
+    
+    #sign-up{
+        margin-left: 75px;
+    }
