@@ -85,26 +85,33 @@
       margin-bottom: 30px;
      width: 30%;
      display: inline-block;
+     vertical-align: middle;
+     margin: 15px;
     }
-    #section3{
-      background-color: rgba(232, 228, 228, 0.694);
+    #learning{
+      background-color: #f5f5f5;
     }
     #section-title3{
       width: 60%;
       margin: auto;
       text-align: center;
-      padding: 70px ;
+      padding: 30px 70px;
     }
-    #section-content{
-      max-width: 50%;
-      text-align: left;
-      display: inline-block;
-      padding: 50px;
+
+    #learning-left{
+      float: left;
+      margin-left: 15%;
     }
-    #section-image{
-      display: inline-block;
-      margin-left: 10% ;
+    #learning-right{
+      float: right;
+      margin-right: 15%;
     }
-    #section-button{
-      padding: 25px;
+  
+    #footer{
+    clear: both;
+    text-align: center;
+    }
+
+    #footer h4{
+      margin-bottom: 30px;
     }
