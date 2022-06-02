@@ -1,6 +1,14 @@
 
-h1 {
+h1, h3 {
     text-align: center;
+}
+
+li{
+    display: inline;
+}
+
+.alinha-texto{
+    margin-left: 150px;
 }
 
 .first {
