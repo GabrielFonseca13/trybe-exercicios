@@ -4,12 +4,9 @@ h1, h3 {
 }
 
 li{
-    display: inline;
+    display: inline-block;
 }
 
-.alinha-texto{
-    margin-left: 150px;
-}
 
 .first {
     background-color: rgb(235, 200, 84);
