@@ -10,4 +10,4 @@ if (bebidaPrincipal === 'cafezinho' || bebidaAlternativa === 'suco de laranja') 
 // console.log(true || true); // true
 // console.log(true || false); // true
 // console.log(false || true); // true
-// console.log(false || false); // false
+// console.log(false || false); // falsegit
