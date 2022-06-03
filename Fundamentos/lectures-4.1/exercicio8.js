@@ -6,3 +6,8 @@ if (bebidaPrincipal === 'cafezinho' || bebidaAlternativa === 'suco de laranja') 
 } else {
   console.log("Ei, eu não pedi isso!");
 }
+
+// console.log(true || true); // true
+// console.log(true || false); // true
+// console.log(false || true); // true
+// console.log(false || false); // false
