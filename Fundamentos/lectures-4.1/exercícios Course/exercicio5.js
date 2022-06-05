@@ -14,6 +14,4 @@ if (angulosPositivos){
 };
 }else{
     console.log('Erro: Angulo Inválido')
-}
-
- 
+};
