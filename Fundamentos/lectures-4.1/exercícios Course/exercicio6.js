@@ -1,4 +1,4 @@
-const pecaXadrez = 'RainHA';
+const pecaXadrez = 'Ninja';
 
 switch (pecaXadrez.toLowerCase()){
     case 'rei':
@@ -18,5 +18,8 @@ switch (pecaXadrez.toLowerCase()){
         break;
     case 'peao':
         console.log('PEÃO: movimenta-se apenas uma casa e para frente, o peão pode "comer" peças adversárias na diagonal. No primeiro movimento do Peão ele pode avançar 2 casas a frente');
+        break;
+    default:
+        console.log('Peça Inválida');
         break;
 }
