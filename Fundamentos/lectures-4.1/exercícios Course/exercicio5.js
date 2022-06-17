@@ -1,6 +1,6 @@
 const anguloA = 10;
-const anguloB = -25;
-const anguloC = 80;
+const anguloB = 90;
+const anguloC = 79;
 
 let somaDosAngulos = anguloA + anguloB + anguloC;
 

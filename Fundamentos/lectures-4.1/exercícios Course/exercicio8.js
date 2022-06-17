@@ -1,4 +1,4 @@
-const number1 = 9s;
+const number1 = 10;
 const number2 = 17;
 const number3 = 21;
 
