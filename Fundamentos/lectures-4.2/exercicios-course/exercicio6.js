@@ -5,4 +5,8 @@ let contImpar = 0;
             contImpar += 1
         };
     }
-console.log(contImpar);
+    if(contImpar === 0){
+        console.log('nenhum valor ímpar encontrado');
+    } else {
+    console.log(contImpar);
+    }
