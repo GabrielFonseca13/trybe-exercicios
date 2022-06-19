@@ -22,4 +22,5 @@ function frear(decremento){
     return 'Desacelerando a ' + aceleracao + 'Km/h';
 };
 
-ligarDesligar();
+console.log(ligarDesligar());
+
