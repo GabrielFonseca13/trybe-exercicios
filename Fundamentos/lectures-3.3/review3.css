@@ -1,0 +1,17 @@
+/* O texto das tags 'h1' e 'p' estejam centralizados.
+A cor de fundo da sua lista mude quando o cursor estiver sobre o item.
+A fonte do item mude quando ele for clicado. */
+
+h1, p{
+text-align: center;
+}
+li:hover{
+    background-color: orange;
+}
+li:active{
+    color: green;
+    font-family: fantasy;
+}
+ul,ol{
+    list-style: none;
+}

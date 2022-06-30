@@ -1,0 +1,31 @@
+div:hover{
+    border: solid black 5px;
+    line-height: 5px;
+}
+div:nth-of-type(1){
+    color: white;
+    background-color: green;
+}
+div:nth-of-type(2){
+    color: white;
+    background-color: red;
+}
+div:nth-of-type(3){
+    background-color: darkgoldenrod;
+    color: white;
+    height: 75px;
+}
+div:nth-of-type(4){
+    color: white;
+    background-color: #1e1e1e;
+}
+div:nth-of-type(5){
+    background-color: gainsboro;
+}
+div:nth-of-type(1) > h3{
+    font-size: 25px;
+}
+/* 5 - Deixe as tags ímpares h3 com o texto em itálico. */
+div:nth-of-type(odd){
+    font-style: italic;
+}
