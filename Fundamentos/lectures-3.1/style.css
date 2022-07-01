@@ -1,0 +1,117 @@
+
+   *{
+       margin: 0;
+       padding: 0;
+   }
+   
+   h1 {
+    font-family: 'montserrat', sans-serif;
+     }
+
+   p , li {
+     color: #475550;
+     font-size: 16px;
+   }
+  
+   .trybe-green {
+     color:#11a36a
+   }
+
+   #main-title {
+    color: #0a7e51;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -1px;     
+   }
+   .section-title{
+     font-size: 28px;
+     line-height: 42 px;
+     font-weight: 600;
+   }
+   .testemonial-name{
+     font-size: 14;
+     line-height: 20px;
+     font-weight: 600;
+     
+   }
+   .picture {
+     border-radius: 100%;
+     }
+
+   .button {
+     background-color: #11a36a;
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+     padding: 12px;
+     border-radius: 8px;
+   }
+
+   #header {
+      background-image: url(./site_trybe/images/smiling-image.jpg);
+      background-position: 50% 25%;
+      background-size: cover;
+      padding: 60px 40PX 30PX;
+    }
+
+    #header-content{
+      margin-top: 20px;
+        max-width: 50%;
+        margin-left: 75px;
+    }
+
+    #text-header{
+      margin-top: 20px;
+      max-width: 80%;
+    }
+
+    #sign-up {
+      margin-top: 40px;
+      margin-left: 75px;
+    }
+
+    #marketing{
+      text-align: center;
+      padding: 70px ;
+    }
+  #marketing-text{
+    max-width: 60%;
+    margin: auto;
+  }
+    .student-content{
+      margin-top: 30px;
+      margin-bottom: 30px;
+     width: 30%;
+     display: inline-block;
+     vertical-align: middle;
+     margin: 15px;
+    }
+    #learning{
+      background-color: #f5f5f5;
+    }
+    #section-title3{
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      padding: 30px 70px;
+    }
+
+    #learning-left{
+      float: left;
+      margin-left: 15%;
+    }
+    #learning-right{
+      float: right;
+      margin-right: 15%;
+    }
+  
+    #footer{
+    clear: both;
+    text-align: center;
+    }
+
+    #footer h4{
+      margin-bottom: 30px;
+    }

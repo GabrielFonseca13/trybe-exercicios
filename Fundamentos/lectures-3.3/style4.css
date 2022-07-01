@@ -1,0 +1,48 @@
+div:hover{
+border: 6px solid black;
+}
+div:nth-of-type(1){
+    background-color: #000814;
+}
+div:nth-of-type(2){
+    background-color: #001d3d;
+}
+div:nth-of-type(3){
+    background-color: #003566;
+    height: 150px;
+    font-size: 50px;
+}
+div:nth-of-type(4){
+    background-color: #ffc300;
+}
+div:nth-of-type(5) {
+    background-color: #ffd60a;
+}
+div:nth-of-type(1) > h3{
+    font-family: fantasy;
+    font-size: 30;
+    color: white;
+    font-style: italic;
+}
+div:nth-of-type(2) > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30;
+    color: green;
+}
+div:nth-of-type(3) > h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30;
+    color: yellowgreen;
+    font-style: italic;
+}
+div:nth-of-type(4) > h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30;
+    color: red;
+}
+div:nth-of-type(5) > h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30;
+    color: purple;
+    font-style: italic;
+}
