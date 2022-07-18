@@ -3,3 +3,6 @@ twoYears.innerText = 'Casado, sendo um desenvolvedor com grandes habilidades e m
 
 const bgMain = document.querySelectorAll('.main-content')[0];
 bgMain.style.background = 'rgb(76,164,109)';
+
+const centerSquare = document.querySelector('.main-content .center-content');
+centerSquare.style.background = 'white';
