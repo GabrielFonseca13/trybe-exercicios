@@ -23,16 +23,22 @@
     //   Crie um irmão para elementoOndeVoceEsta.
     const exUm = document.getElementById('pai')
     let criaIrmao = document.createElement('section')
+    criaIrmao.id = 'irmaoElementoOndeVoceEsta'
     exUm.appendChild(criaIrmao);
     //   Crie um filho para elementoOndeVoceEsta.
     const exDois = document.getElementById('elementoOndeVoceEsta');
     let criaFilho = document.createElement('div')
+    criaFilho.id = 'filhoElementoOndeVoceEsta'
     exDois.appendChild(criaFilho);
     //   Crie um filho para primeiroFilhoDoFilho.
     const exTres = document.getElementById('primeiroFilhoDoFilho');
     let criaFilhoDoFilho = document.createElement('nav');
+    criaFilhoDoFilho.id = 'filhoPrimeiroFilhoDoFilho'
     exTres.appendChild(criaFilhoDoFilho);
     //   A partir desse filho criado, acesse terceiroFilho.
+    const terceiroFilho = document.getElementById('filhoPrimeiroFilhoDoFilho');
+    terceiroFilho.parentElement.parentElement.nextElementSibling;
+    console.log(terceiroFilho);
     </script>
   </body>
 </html>
