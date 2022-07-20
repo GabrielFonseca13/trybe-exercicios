@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="paiDoPai">
+      <section id="pai">
+        <section id="primeiroFilho"></section>
+        <section id="elementoOndeVoceEsta">
+          <section id="primeiroFilhoDoFilho"></section>
+          <section id="segundoEUltimoFilhoDoFilho"></section>
+        </section>
+        Atenção!
+        <section id="terceiroFilho"></section>
+        <section id="quartoEUltimoFilho"></section>
+      </section>
+    </main>
+    <script>
+    // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+      // 1° Passo - recupera o elemento com o id pai;
+      const pai = document.getElementById('pai');
+      console.log(pai);
+      //2° passo - Utilize o .childNodes para retornar uma coleção viva de nós filhos do elemento pai.
+      const todosOsFilhos = pai.childNodes;
+      console.log(todosOsFilhos);
+      // 3° passo - Utilize uma estrutura de repetição para iterar sob o nodeList todosOsFilhos do último ao primeiro elemento. Nesse aspecto, o nodeList se comporta como um array, acessível por índice numérico.
+      // Utilize o .length para verificar o tamanho que todosOsFilhos possui;
+      // Como a primeira posição de um nodeList (assim como no array) é a posição 0, subtraia 1 do tamanho de todosOsFilhos para obter a expressão inicial (índice);
+      // Decremente o index a cada iteração.
+      for (let index = todosOsFilhos.length -1; index >=0 ; index -= 1){
+        //Quarto passo: Armazene o filho atual em uma variável. Para que possa manipular no futuro.
+        const filhoAtual = todosOsFilhos[index];
+        //Quinto passo: Caso o id do filhoAtual seja diferente de elementoOndeVoceEsta, remova o filhoAtual.
+        if (filhoAtual.id !== 'elementoOndeVoceEsta'){
+          filhoAtual.remove();
+        }
+      }
+      // Sexto passo: Recupere o elemento com o id segundoEUltimoFilhoDoFilho e o remova.
+      const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilho');
+      segundoEUltimoFilhoDoFilho.remove(); 
+    /script>
+  </body>
+</html>
