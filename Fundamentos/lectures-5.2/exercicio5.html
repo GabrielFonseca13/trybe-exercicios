@@ -75,10 +75,13 @@
         const p1 = document.createElement('p');
         p1.innerText = 'Tô deitando no DOM.';
         section1.appendChild(p1);
-    // 5 🚀 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+    // // 5 🚀 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+    // Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
         const section2 = document.createElement('section');
         section2.classList = 'left-content';
         main.appendChild(section2);
+
+        main.removeChild(section2);
     // 6 🚀 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
         const section3 = document.createElement('section');
         section3.classList = 'right-content';
