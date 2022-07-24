@@ -104,18 +104,23 @@ function displayHolidays() {
 }
 
 displayHolidays();
-// function changeBackGroundHolidays() {
-
-//   for (let index = 0; index < getHolidays.length; index +=1){
-//     getHolidays[index].style.backgroundcolor = 'green';
-//   }
-// }
-// changeBackGroundHolidays();
 
 // 🚀 Exercício 4:
 // Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira". Sua função deve receber como parâmetro a string "Sexta-feira".
 // Adicione a esse botão o ID "btn-friday";
 // Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
+
+function createFridayButton(buttonName) {
+  let newButton = document.createElement("button");
+  newButton.id = "btn-friday";
+
+  newButton.innerHTML = buttonName;
+
+  btnContainner.appendChild(newButton);
+}
+
+createFridayButton('Sexta-Feira');
+
 
 // 🚀 Exercício 5:
 // Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira. Adicione ao botão "Sexta-feira" um evento de "click" e modifique o texto a ser exibido nos dias que são sextas-feiras.
