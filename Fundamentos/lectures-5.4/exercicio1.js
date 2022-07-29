@@ -24,7 +24,9 @@ window.onload = function(){
     console.log(fontSize);
     fontSize.addEventListener('change', function(){
         console.log(fontSize.value); 
-        text.style.fontSize = `${fontSize.value}px`;   
+        text.style.fontSize = `${fontSize.value}px`;
+        
+    localStorage.setItem('5.4-fontSize',`${fontSize.value}px`);
     })
 
     let savedbackgroundColor = localStorage.getItem('5.4-backgroundColor')
@@ -33,4 +35,7 @@ window.onload = function(){
     let savedColorFont = localStorage.getItem('5.4-colorFont');
     let p = document.getElementById('text');
     p.style.color = savedColorFont;
+
+    let savedFontSize = localStorage.getItem('5.4-fontSize');
+    p.style.fontSize = savedFontSize;
 }
