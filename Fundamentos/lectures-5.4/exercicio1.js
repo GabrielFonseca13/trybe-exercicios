@@ -4,7 +4,7 @@ window.onload = function(){
     console.log(select);
     select.addEventListener('change', function(){
         let selectedColor = select.selectedOptions[0];
-        console.log(select.selectedOptions);
+        // console.log(select.selectedOptions);
         document.body.style.backgroundColor = selectedColor.value;
     })
 
@@ -12,9 +12,14 @@ window.onload = function(){
     let selectTextColor = document.getElementById('selectTextColor');
     selectTextColor.addEventListener('change', function(){
         let selectedTextColor = selectTextColor.selectedOptions[0];
-        console.log(selectedTextColor);
+        // console.log(selectedTextColor);
         text.style.color = selectedTextColor.value;
     })
 
     let fontSize = document.getElementById('fontSize');
+    console.log(fontSize);
+    fontSize.addEventListener('change', function(){
+        console.log(fontSize.value); 
+        text.style.fontSize = `${fontSize.value}px`;   
+    })
 }
