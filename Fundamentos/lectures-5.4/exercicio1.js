@@ -6,6 +6,8 @@ window.onload = function(){
         let selectedColor = select.selectedOptions[0];
         // console.log(select.selectedOptions);
         document.body.style.backgroundColor = selectedColor.value;
+
+        localStorage.setItem('5.4-backgroundColor',selectedColor.value);
     })
 
     let text = document.getElementById('text');
@@ -22,4 +24,7 @@ window.onload = function(){
         console.log(fontSize.value); 
         text.style.fontSize = `${fontSize.value}px`;   
     })
+
+    let savedbackgroundColor = localStorage.getItem('5.4-backgroundColor')
+    document.body.style.backgroundColor = savedbackgroundColor;
 }
