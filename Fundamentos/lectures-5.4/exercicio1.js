@@ -29,6 +29,15 @@ window.onload = function(){
     localStorage.setItem('5.4-fontSize',`${fontSize.value}px`);
     })
 
+    let lineHeight = document.getElementById('line-height');
+    console.log(lineHeight);
+    lineHeight.addEventListener('change', function(){
+        console.log(lineHeight.value);
+        text.style.lineHeight = `${lineHeight.value}px`
+
+    localStorage.setItem('5.4-lineHeight',`${lineHeight.value}px` )
+    })
+
     let savedbackgroundColor = localStorage.getItem('5.4-backgroundColor')
     document.body.style.backgroundColor = savedbackgroundColor;
 
@@ -38,4 +47,7 @@ window.onload = function(){
 
     let savedFontSize = localStorage.getItem('5.4-fontSize');
     p.style.fontSize = savedFontSize;
+
+    let savedLineHeight = localStorage.getItem('5.4-lineHeight');
+    p.style.lineHeight = savedLineHeight;
 }
