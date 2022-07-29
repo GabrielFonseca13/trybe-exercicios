@@ -16,6 +16,8 @@ window.onload = function(){
         let selectedTextColor = selectTextColor.selectedOptions[0];
         // console.log(selectedTextColor);
         text.style.color = selectedTextColor.value;
+
+    localStorage.setItem('5.4-colorFont', selectedTextColor.value);
     })
 
     let fontSize = document.getElementById('fontSize');
@@ -27,4 +29,8 @@ window.onload = function(){
 
     let savedbackgroundColor = localStorage.getItem('5.4-backgroundColor')
     document.body.style.backgroundColor = savedbackgroundColor;
+
+    let savedColorFont = localStorage.getItem('5.4-colorFont');
+    let p = document.getElementById('text');
+    p.style.color = savedColorFont;
 }
