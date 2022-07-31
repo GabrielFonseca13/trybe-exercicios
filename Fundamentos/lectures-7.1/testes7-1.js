@@ -17,5 +17,13 @@
 
 // Exemplos template literals
 
-const myName = 'Gabriel Dev';
-console.log(`Este é o Primeiro Template Literals de ${myName} !!`);
+// const myName = 'Gabriel Dev';
+// console.log(`Este é o Primeiro Template Literals de ${myName} !!`);
+
+const pessoa = {
+    nome: 'Micheli',
+    sobrenome: 'Santos',
+    idade: 27,
+}
+
+console.log(`Noiva: ${pessoa.nome} ${pessoa.sobrenome}. idade: ${pessoa['idade']}`);
