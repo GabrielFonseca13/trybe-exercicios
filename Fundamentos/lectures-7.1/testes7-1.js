@@ -20,10 +20,24 @@
 // const myName = 'Gabriel Dev';
 // console.log(`Este é o Primeiro Template Literals de ${myName} !!`);
 
-const pessoa = {
-    nome: 'Micheli',
-    sobrenome: 'Santos',
-    idade: 27,
-}
+// const pessoa = {
+//     nome: 'Micheli',
+//     sobrenome: 'Santos',
+//     idade: 27,
+// }
 
-console.log(`Noiva: ${pessoa.nome} ${pessoa.sobrenome}. idade: ${pessoa['idade']}`);
+// console.log(`Noiva: ${pessoa.nome}
+// ${pessoa.sobrenome}. 
+// Ano de nascimento: ${2022 - pessoa['idade']}`);
+
+//ARROW FUNCTIONS
+
+// const printName = function () {
+//     const myName = 'Lucas';
+//     return myName;
+//   };
+  
+//   console.log(printName());
+
+const soma = (num1, num2) => num1 + num2;
+console.log(soma(123,312));
