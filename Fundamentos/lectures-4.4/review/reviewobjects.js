@@ -31,6 +31,18 @@ let arrayParaTeste = [];
     }
     console.log(arrayParaTeste);
 
+function parImpar (numerosDaFuncao){
+    for (let numero of numerosDaFuncao){
+        if (numero % 2 === 0){
+            numeros['pares'] +=1;
+        } else {
+            numeros['impares'] +=1;
+        }
+    }
+    return numeros;
+}
+console.log(parImpar(arrayParaTeste));
+
 // EXERCICIO3 - Crie uma função que receba uma string ending. Verifique se a string ending é o final da string word.
 // Considere que a string ending sempre será menor que a string world.
 // Usar Split.
