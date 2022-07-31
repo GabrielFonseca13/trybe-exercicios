@@ -39,5 +39,17 @@
   
 //   console.log(printName());
 
-const soma = (num1, num2) => num1 + num2;
-console.log(soma(123,312));
+// const soma = (num1, num2) => num1 + num2;
+// console.log(soma(123,312));
+
+// function objetoPessoa(nome, idade){
+//     return {
+//         nome: nome,
+//         idade: idade,
+//     }
+// }
+
+// console.log(objetoPessoa('Gabriel', 29))
+
+const objetoPessoa = (nome, idade) => ({nome: nome, idade: idade});
+console.log(objetoPessoa('Gabriel', 29))
