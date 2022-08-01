@@ -20,7 +20,7 @@ const changeX = nome => {
     return fraseArray.join(' ');
 }
 
-console.log(changeX("Bebeto"));
+//console.log(changeX("Bebeto"));
 
 // Função 2: Escreva uma função que irá receber o retorno da Função 1 por parâmetro e retornará uma nova string.
 // A função deverá receber o retorno da Função 1 por parâmetro;
@@ -33,3 +33,16 @@ console.log(changeX("Bebeto"));
 // JavaScript   
 // HTML
 // CSS
+
+const mainSkills = returnFunction => {
+    const skills = ['JavaScript', 'HTML', 'CSS'];
+    
+    return `${returnFunction}
+    Minhas três principais habilidades são:
+    ${skills[0]}
+    ${skills[1]}
+    ${skills[2]}`;
+
+} 
+
+console.log(mainSkills(changeX("Bebeto")));
