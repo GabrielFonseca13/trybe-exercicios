@@ -7,5 +7,7 @@ let clickCount = 0;
 const buttonTest = document.getElementById("buttonTest");
 const textCountClick = document.getElementById("text");
 
-buttonTest.addEventListener('click', () => textCountClick.innerHTML = clickCount += 1);
+// buttonTest.addEventListener('click', () => textCountClick.innerHTML = clickCount += 1);
 
+buttonTest.addEventListener('click', function (){
+    textCountClick.innerHTML = clickCount += 1 });
