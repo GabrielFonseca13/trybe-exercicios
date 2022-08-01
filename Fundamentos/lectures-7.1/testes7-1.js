@@ -51,5 +51,23 @@
 
 // console.log(objetoPessoa('Gabriel', 29))
 
-const objetoPessoa = (nome, idade) => ({nome: nome, idade: idade});
-console.log(objetoPessoa('Gabriel', 29))
+// const objetoPessoa = (nome, idade) => ({nome: nome, idade: idade});
+// console.log(objetoPessoa('Gabriel', 29))
+
+// OPERADOR TERNÁRIO 
+
+// const checkIfElse = (age) => {
+//     if (age >= 18){
+//         return 'você tem idade para dirigir';
+//     } else {
+//         return 'você não tem idade para dirigir';
+//     }
+// };
+
+// console.log(checkIfElse(17));
+
+const checkIfElse = age => (
+    age >= 18 ? 'VocÊ tem idade para dirigir' : 'Você não tem idade para dirigir'
+)
+
+console.log(checkIfElse(18));
