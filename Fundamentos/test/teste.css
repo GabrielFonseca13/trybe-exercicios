@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #title {
+    height: 80%;
+    font-size: 50px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* COLOR PALLET */
+  #color-palette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .color {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    margin: 3px;
+  }
+  
+  .color-palette-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* PIXEL BOARD */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .shadow {
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px black;
+  }
+  
+  #pixel-board {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .pixel {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  /* COLORS */
+  #color1 {
+    background-color: black;
+  }
+  
+  /* container */
+  #button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  button {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border: 0;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 5px;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  #input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  input {
+    margin-right: 10px;
+    height: 25px;
+    padding: 0 10px;
+  }
