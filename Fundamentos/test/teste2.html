@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels Art</title>
+    <link rel="stylesheet" type="text/css" href="teste2.css">
+  </head>
+  
+  <body>
+    <main class="flex-column-container">
+      <section id="project-description">
+        <h1 id="title">Paleta de Cores</h1>
+      </section>
+
+      <section class="flex-row-container" id="color-palette">
+        <div class="color selected"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </section>
+
+      <section class="flex-row-container" id="board-settings">
+        <div class="size-settings">
+          <input type="number" name="boardSize" id="board-size" min="1" max="50" placeholder="Tamanho do quadro">
+
+          <button id="generate-board">VQV</button>
+        </div>
+        
+        <button id="clear-board">Limpar</button>
+      </section>
+
+      <section class="flex-row-container" id="pixel-board"></section>
+    </main>
+
+    <script type="application/javascript" src="teste2.js"></script>
+  </body>
+</html>

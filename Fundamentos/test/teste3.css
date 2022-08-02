@@ -1,0 +1,44 @@
+#title {
+    color: antiquewhite;
+    justify-content: center;
+  }
+  
+  body {
+    margin-top: 10px;
+    background: url('/fotos/budah.jpg') no-repeat center center fixed;
+    text-align: center;
+    background-size: cover;
+  }
+  
+  .color {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  
+  #color-palette {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .linha {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pixel {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  .button {
+    margin-bottom: 20px;
+  }

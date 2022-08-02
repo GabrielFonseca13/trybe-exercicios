@@ -46,3 +46,9 @@ console.log(parImpar(arrayParaTeste));
 // EXERCICIO3 - Crie uma função que receba uma string ending. Verifique se a string ending é o final da string word.
 // Considere que a string ending sempre será menor que a string world.
 // Usar Split.
+
+let palavra = 'Cachorro';
+
+
+console.log(palavra.split('rro'));
+console.log(palavra.split[1]);
