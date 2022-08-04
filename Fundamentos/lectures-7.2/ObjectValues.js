@@ -7,7 +7,8 @@ const coolestTvShow = {
     seasons: 6,
   };
   
-  for (const property in coolestTvShow) {
-    console.log(coolestTvShow[property]);
-  }
+//   for (const property in coolestTvShow) {
+//     console.log(coolestTvShow[property]);
+//   }
   
+console.log(Object.values(coolestTvShow));
