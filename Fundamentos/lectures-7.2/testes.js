@@ -49,6 +49,8 @@
     seasons: 6,
   };
 
-  for (let values in coolestTvShow){
-    console.log(values);
-  };
+  // for (let values in coolestTvShow){
+  //   console.log(values);
+  // };
+
+  console.log(Object.keys(coolestTvShow));
