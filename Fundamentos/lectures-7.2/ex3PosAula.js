@@ -18,9 +18,11 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  const criaTurnoNoite = (objeto, chave, valor) => {
-    objeto[chave]  = valor;
-  };
+  const criaTurnoNoite = (objeto, chave, valor) => objeto[chave] = valor;
+  
   criaTurnoNoite(lesson2, 'turno', 'noite');
 
   console.log(lesson2);
+
+  const listaKeys = objeto => Object.keys(objeto);
+  console.log(listaKeys(lesson2));
