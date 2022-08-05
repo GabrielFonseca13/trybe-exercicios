@@ -17,3 +17,10 @@ const lesson1 = {
     professor: 'Maria Clara',
     turno: 'noite',
   };
+
+  const criaTurnoNoite = (objeto, chave, valor) => {
+    objeto[chave]  = valor;
+  };
+  criaTurnoNoite(lesson2, 'turno', 'noite');
+
+  console.log(lesson2);
