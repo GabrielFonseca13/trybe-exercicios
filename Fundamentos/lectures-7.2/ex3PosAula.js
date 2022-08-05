@@ -54,3 +54,11 @@ const totalAlunos = objeto => {
     return alunos;
 }
 console.log(totalAlunos(allLessons));
+
+//Crie uma função que obtenha o valor da chave de acordo com o seu índice no objeto. Por exemplo:
+
+const getValueByNumber = (objeto, index) => {
+const element = Object.values(objeto);
+return element[index];
+}
+console.log(getValueByNumber(lesson1, 1));
