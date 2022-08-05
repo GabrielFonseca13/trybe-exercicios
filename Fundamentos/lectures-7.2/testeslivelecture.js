@@ -7,6 +7,12 @@ const person = {
         country: 'Brazil',
     }
 };
+ const hobbies = {
+        timeDeFutebol: "atletico MG",
+        idoloFutebol: 'Neymar',
+        timeDeBasquete: 'GSW',
+        idoloBasquete: 'Kobe Bryant',
+ };
 
 // // console.log(person);
 // const keys = Object.keys(person);
@@ -20,7 +26,10 @@ const person = {
 // const person2 = person; 
 // console.log('PESSOA 1 ' + person, ' CÓPIA PESSOA 1 ' + person2);
 
-const person2 = Object.assign({}, person);
-console.log(person, person2);
-person.age = 12;
-console.log(person, person2);
+// const person2 = Object.assign({}, person);
+// console.log(person, person2);
+// person.age = 12;
+// console.log(person, person2);
+
+Object.assign(person, hobbies);
+console.log(person);
