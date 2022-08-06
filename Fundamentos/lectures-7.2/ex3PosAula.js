@@ -75,3 +75,20 @@ const verifyPair = (objeto, chave, valor) => {
   } return isEqual;
 };
 console.log(verifyPair(lesson2,'turno', 'noite'));;
+
+// 🚀 Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+const alunosMatematica = objeto => {
+    let alunos = 0;
+    const array = Object.keys(objeto);
+    for (let index = 0; index < array.length; index += 1) {
+    // console.log(array[index]);
+    if (objeto[array[index]].materia === 'Matemática'){
+        alunos += objeto[array[index]].numeroEstudantes;    
+        }
+    }
+
+    return alunos;
+}
+console.log(alunosMatematica(allLessons));
+// 🚀 Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+
