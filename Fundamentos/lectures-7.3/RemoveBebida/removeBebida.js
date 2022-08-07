@@ -1,5 +1,5 @@
 const removeBebida = (array, remover) => {
-    array.splice(array.indexof(`${remover}`), 1);
+    array.splice(array.indexOf(`${remover}`), 1);
     return array;
 }
 
