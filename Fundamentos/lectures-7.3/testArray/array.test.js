@@ -1,5 +1,3 @@
-const { it } = require('node:test');
-const { describe } = require('yargs');
 const myArray = require('./array')
 
 describe('requisito 1', () => {
