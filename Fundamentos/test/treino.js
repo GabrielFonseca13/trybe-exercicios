@@ -52,7 +52,22 @@ console.log(acumulator());
 
 // 6 Calculado o fatorial de 10 
 
+const calcFatorial = num1 => {
+  let sum = 1
+  for (let index = 2; index <= num1; index += 1){
+    sum *= index;
+  }
+  return sum;
+}
+console.log(calcFatorial(10));
+
 // 7. Criar uma função para calcular a porcentagem de um número 
+
+const percent = (num, percent) => {
+  let result = (num/100) * percent;
+  return ` ${percent}% de ${num} é ${result}.`
+}
+console.log(percent(2500, 33));
 
 // 8. Calcular a soma dos números impares maiores que 10 e menores que 30 
 
