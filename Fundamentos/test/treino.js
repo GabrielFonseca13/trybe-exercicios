@@ -41,6 +41,15 @@ tabuadasAteDez();
 
 // 5. Soma dos números de 1 a 10 
 
+const acumulator = () => {
+  let sum = 0;
+  for (let index = 1; index <= 10; index +=1) {
+    sum += index;
+  }
+  return sum;
+}
+console.log(acumulator());
+
 // 6 Calculado o fatorial de 10 
 
 // 7. Criar uma função para calcular a porcentagem de um número 
