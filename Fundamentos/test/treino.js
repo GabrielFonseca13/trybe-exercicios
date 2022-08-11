@@ -29,6 +29,16 @@ tabuada(12)
 
 // 4. Imprimir todas as tabuadas do número 1 ao 10 
 
+const tabuadasAteDez = () => {
+  for (index = 1; index <= 10; index +=1){
+    console.log(`### TABUADA DE ${index}`);
+    for (let index2 = 1; index2 <= 10; index2 +=1) {
+      console.log(` ${index} X ${index2} = ${index * index2}`);  
+      }
+    }
+  };
+tabuadasAteDez();
+
 // 5. Soma dos números de 1 a 10 
 
 // 6 Calculado o fatorial de 10 
