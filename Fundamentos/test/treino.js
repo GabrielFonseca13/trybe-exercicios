@@ -20,6 +20,13 @@ console.log(listaImpar(100));
 
 // 3. Imprimir a tabuada do número 8 
 
+const tabuada = num1 => {
+  for (let index = 1; index <= num1; index +=1) {
+    console.log(` ${num1} X ${index} = ${num1 * index}`);  
+  }
+}
+tabuada(12)
+
 // 4. Imprimir todas as tabuadas do número 1 ao 10 
 
 // 5. Soma dos números de 1 a 10 
