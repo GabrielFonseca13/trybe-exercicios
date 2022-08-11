@@ -1,4 +1,7 @@
-// 1. Imprimir números de 1 a 10 
+// 1. Imprimir números de 1 a 10.
+for (let index = 1; index <=10; index +=1){
+    console.log(index);
+}
 
 // 2. Imprimir os números impares menores que 100 
 
@@ -22,3 +25,28 @@
 
 // 12. Criar uma função que receba como parâmetro um array de números e retorne um array
 // contendo somente números positivos. 
+
+// 13. Localizar o maior valor dentro de um array de números 
+
+// 14. Calcular a soma de todos os dígitos de um número inteiro positivo 
+
+// 15. Imprimir os 10 primeiros números da sequência de Fibonacci sem usar recursividade 
+
+// 16.Criar uma função para imprimir os 10 primeiros números da sequência de Fibonacci usando
+// recursividade 
+
+// 17. Criar uma função que retorno um valor booleano informando se o número enviado como
+// parâmetro é um número primo. 
+
+// 18. Crie uma função que calcule a raiz quadrada de um número e retorne um número inteiro
+// como resultado 
+
+// 19. Retornar a maior string de um array 
+
+// 20. Criar uma função que junte dois arrays e retorno o resultado como um novo array 
+
+// 21. Implemente o algoritmo "bubble sort" para um array de números 
+
+// 22. Contar a quantidade de palavras em um texto 
+
+// 23. Criar uma função para inverter um array ""
