@@ -71,6 +71,17 @@ console.log(percent(2500, 33));
 
 // 8. Calcular a soma dos números impares maiores que 10 e menores que 30 
 
+const calcSumOddsInterval = (numPartida, numFinal) => {
+  let sumOdds = 0
+  for (index = numPartida; index >= numPartida && index <= numFinal; index += 1){
+    if (index % 2 !== 0) {
+      sumOdds += index;
+    }
+  }
+  return sumOdds
+};
+console.log(calcSumOddsInterval(10,30));
+
 // 9. Criar uma função que converta uma temperatura de Celsius para Fahrenheit 
 
 // 10 . Calcular a soma dos números de um array 
