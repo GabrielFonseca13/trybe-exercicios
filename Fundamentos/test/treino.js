@@ -1,9 +1,22 @@
 // 1. Imprimir números de 1 a 10.
+const imprimeDez = () => {
 for (let index = 1; index <=10; index +=1){
     console.log(index);
 }
+};
+imprimeDez();
 
 // 2. Imprimir os números impares menores que 100 
+
+const listaImpar = num1 => {
+    for (let index = 1; index < num1 ; index +=1 ){
+      if (index % 2 !== 0){
+        console.log(index);
+      };
+    };return `lista de ímpares de 1 a 100`;
+};
+
+console.log(listaImpar(100));
 
 // 3. Imprimir a tabuada do número 8 
 
