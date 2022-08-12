@@ -132,7 +132,29 @@ console.log(criaArrayPositive([12, -25, 33, -10, 2, -49]));
 
 // 13. Localizar o maior valor dentro de um array de números 
 
-// 14. Calcular a soma de todos os dígitos de um número inteiro positivo 
+const biggestArrayNumber = (array) => {
+  let biggestNumber = array[0];
+  for (let index = 1; index < array.length; index +=1 ) {
+    if (array[index] > biggestNumber){
+      biggestNumber = array[index]
+    }     
+  }
+  return `o maior número do array é ${biggestNumber}`
+}
+
+console.log(biggestArrayNumber([3 ,5, 7, 15, 150, 25, 15, 199]));
+
+// 14. Calcular a soma de todos os dígitos de um número inteiro positivo
+
+const calcDigit = num => {
+  let acumulator = 0
+  digit = num.toString();
+  for (let index = 0; index < digit.length; index += 1) {
+    acumulator += parseInt(digit[index]);
+  };
+  return `A soma de todos os dígitos de ${num} é ${acumulator}`
+}
+console.log(calcDigit(1234567));
 
 // 15. Imprimir os 10 primeiros números da sequência de Fibonacci sem usar recursividade 
 
