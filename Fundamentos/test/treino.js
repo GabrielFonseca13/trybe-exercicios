@@ -102,7 +102,18 @@ const sumArrayNumbers = (array) => {
 }
 console.log(sumArrayNumbers([12, 25, 33, 10, 2, 49]));
 
-// 11. Calcular a média de todos os números de um array 
+// 11. Calcular a média de todos os números de um array
+
+const calcMediaArray = (array) =>{
+  sum = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    sum += array[index];
+  }
+  return `A Média do Array é : ${(sum/array.length).toFixed(1)} `
+}
+
+console.log(calcMediaArray([12, 25, 33, 10, 2, 49]));
+
 
 // 12. Criar uma função que receba como parâmetro um array de números e retorne um array
 // contendo somente números positivos. 
