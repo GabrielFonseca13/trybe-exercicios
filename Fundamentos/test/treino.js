@@ -118,6 +118,18 @@ console.log(calcMediaArray([12, 25, 33, 10, 2, 49]));
 // 12. Criar uma função que receba como parâmetro um array de números e retorne um array
 // contendo somente números positivos. 
 
+const criaArrayPositive = (array) => {
+  const arrayPositive = [];
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] > 0) {
+      arrayPositive.push(array[index]);      
+    }
+  }
+  return arrayPositive;
+}
+
+console.log(criaArrayPositive([12, -25, 33, -10, 2, -49]));
+
 // 13. Localizar o maior valor dentro de um array de números 
 
 // 14. Calcular a soma de todos os dígitos de um número inteiro positivo 
