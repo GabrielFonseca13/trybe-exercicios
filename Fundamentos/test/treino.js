@@ -82,7 +82,14 @@ const calcSumOddsInterval = (numPartida, numFinal) => {
 };
 console.log(calcSumOddsInterval(10,30));
 
-// 9. Criar uma função que converta uma temperatura de Celsius para Fahrenheit 
+// 9. Criar uma função que converta uma temperatura de Celsius para Fahrenheit
+
+const converteTemperatura = tempCelsius => {
+  tempFahrenheit = (tempCelsius * 1.8) + 32;
+  
+  return ` ${tempCelsius}° Celsius equivalem a ${tempFahrenheit.toFixed(1)}° Fahrenheit;`
+}
+console.log(converteTemperatura(37));
 
 // 10 . Calcular a soma dos números de um array 
 
