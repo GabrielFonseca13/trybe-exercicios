@@ -93,6 +93,15 @@ console.log(converteTemperatura(37));
 
 // 10 . Calcular a soma dos números de um array 
 
+const sumArrayNumbers = (array) => {
+  let sum = 0;
+  for (index = 0; index < array.length ; index += 1){
+    sum += array[index];
+  }
+  return sum;
+}
+console.log(sumArrayNumbers([12, 25, 33, 10, 2, 49]));
+
 // 11. Calcular a média de todos os números de um array 
 
 // 12. Criar uma função que receba como parâmetro um array de números e retorne um array
