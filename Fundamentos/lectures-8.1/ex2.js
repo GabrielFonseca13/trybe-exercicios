@@ -17,7 +17,7 @@ const checkNumber = (callback1, callback2) => {
     randomNumber = callback1();
     
     if (betNumber === randomNumber){
-        return `Número apostado: ${betNumber}.
+        return `Número apostado: ${betNumber}
 Número Sorteado: ${randomNumber}
 Parabéns você ganhou !!!`;
     } else {
