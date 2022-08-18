@@ -20,6 +20,7 @@
 // names.forEach(convertToUpperCase);
 // console.log(names); // [ 'BIANCA', 'CAMILA', 'FERNANDO', 'ANA ROBERTA' ]
 
+<<<<<<< HEAD
 // const emailListInData = [
 //     'roberta@email.com',
 //     'paulo@email.com',
@@ -57,3 +58,17 @@ window.onload = () => {
   pares.appendChild(novoNumero);
   })
 };
+=======
+const emailListInData = [
+    'roberta@email.com',
+    'paulo@email.com',
+    'anaroberta@email.com',
+    'fabiano@email.com',
+  ];
+  
+  const showEmailList = (email) => {
+    console.log(`O email ${email} esta cadastrado em nosso banco de dados!`);
+  };
+  
+emailListInData.forEach(showEmailList);
+>>>>>>> fd9098173b26cf4bc2c9dbe90476f294ad939cf0
