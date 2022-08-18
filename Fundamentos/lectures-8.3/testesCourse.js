@@ -1,3 +1,6 @@
+// ############ FILTER ##############
+
+
 // arr.filter((element, index, arrayCompleto) => {
 //     console.log(element,index,arrayCompleto);
 // });
@@ -53,6 +56,8 @@
 
 //     console.log(removeStudent('Ricardo', arrayMyStudents));
 
+//################ MAP #####################
+
 // const pessoas = ['Maria','Jose','Nilce','Rafael'];
 
 // // const novasPessoas = pessoas.map((elemento) => elemento.toUpperCase());
@@ -66,12 +71,18 @@
 
 // console.log(novasPessoas);
 
-const persons = [
-    { firstName: 'Maria', lastName: 'Ferreira' },
-    { firstName: 'João', lastName: 'Silva' },
-    { firstName: 'Antonio', lastName: 'Cabral' },
-  ];
+// const persons = [
+//     { firstName: 'Maria', lastName: 'Ferreira' },
+//     { firstName: 'João', lastName: 'Silva' },
+//     { firstName: 'Antonio', lastName: 'Cabral' },
+//   ];
 
-  const personFullName = persons.map((elemento) => (`${elemento.firstName} ${elemento.lastName}`));
+//   const personFullName = persons.map((elemento) => (`${elemento.firstName} ${elemento.lastName}`));
     
- console.log(personFullName);
+//  console.log(personFullName);
+
+const numbers = [1, 2, 3, 4, -5];
+const turnNegative = numbers.map ((elemento) => (elemento > 0) ? elemento * -1 : elemento);
+
+console.log(numbers);
+console.log(turnNegative);
