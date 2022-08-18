@@ -53,15 +53,25 @@
 
 //     console.log(removeStudent('Ricardo', arrayMyStudents));
 
-const pessoas = ['Maria','Jose','Nilce','Rafael'];
+// const pessoas = ['Maria','Jose','Nilce','Rafael'];
 
-// const novasPessoas = pessoas.map((elemento) => elemento.toUpperCase());
+// // const novasPessoas = pessoas.map((elemento) => elemento.toUpperCase());
 
-const novasPessoas = pessoas.map((elemento) => {
-    const registro = {};
-    registro.nome = elemento.toUpperCase();
-    registro.empresa = 'Trybe';
-    return registro;
-})
+// const novasPessoas = pessoas.map((elemento) => {
+//     const registro = {};
+//     registro.nome = elemento.toUpperCase();
+//     registro.empresa = 'Trybe';
+//     return registro;
+// })
 
-console.log(novasPessoas);
+// console.log(novasPessoas);
+
+const persons = [
+    { firstName: 'Maria', lastName: 'Ferreira' },
+    { firstName: 'João', lastName: 'Silva' },
+    { firstName: 'Antonio', lastName: 'Cabral' },
+  ];
+
+  const personFullName = persons.map((elemento) => (`${elemento.firstName} ${elemento.lastName}`));
+    
+ console.log(personFullName);
