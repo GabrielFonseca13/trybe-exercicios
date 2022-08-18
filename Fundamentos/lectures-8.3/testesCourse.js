@@ -33,17 +33,24 @@
 // const alunosReprovados = notasAlunos.filter((element) => !(element.nota >= 80));
 // console.log(alunosReprovados);
 
-const objPeople = [
-    { name: 'José', age: 21 },
-    { name: 'Lucas', age: 19 },
-    { name: 'Maria', age: 16 },
-    { name: 'Gilberto', age: 18 },
-    { name: 'Vitor', age: 15 },
-  ];
+// const objPeople = [
+//     { name: 'José', age: 21 },
+//     { name: 'Lucas', age: 19 },
+//     { name: 'Maria', age: 16 },
+//     { name: 'Gilberto', age: 18 },
+//     { name: 'Vitor', age: 15 },
+//   ];
 
-  const canDrive = (arrayDePessoas) =>
-    arrayDePessoas.filter((pessoa) => pessoa.age >= 18);
-    console.log(canDrive(objPeople));
-   const cantDrive = (arrayDePessoas) => 
-   arrayDePessoas.filter((pessoa) => !(pessoa.age >= 18)); 
-   console.log(cantDrive(objPeople));
+//   const canDrive = (arrayDePessoas) =>
+//     arrayDePessoas.filter((pessoa) => pessoa.age >= 18);
+//     console.log(canDrive(objPeople));
+//    const cantDrive = (arrayDePessoas) => 
+//    arrayDePessoas.filter((pessoa) => !(pessoa.age >= 18)); 
+//    console.log(cantDrive(objPeople));
+
+const arrayMyStudents = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
+
+const removeStudent = (nome, arraydePessoas) =>
+    arraydePessoas.filter((pessoa) => pessoa !=nome);
+
+    console.log(removeStudent('Ricardo', arrayMyStudents));
