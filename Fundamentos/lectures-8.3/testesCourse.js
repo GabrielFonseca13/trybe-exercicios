@@ -81,8 +81,21 @@
     
 //  console.log(personFullName);
 
-const numbers = [1, 2, 3, 4, -5];
-const turnNegative = numbers.map ((elemento) => (elemento > 0) ? elemento * -1 : elemento);
+// const numbers = [1, 2, 3, 4, -5];
+// const turnNegative = numbers.map ((elemento) => (elemento > 0) ? elemento * -1 : elemento);
 
-console.log(numbers);
-console.log(turnNegative);
+// console.log(numbers);
+// console.log(turnNegative);
+
+const products = ['Arroz', 'Feijão', 'Alface', 'Tomate'];
+const prices = [2.99, 3.99, 1.5, 2];
+
+const newProductsList = (listProducts, listPrices) => {
+    const novaLista = listProducts.map((element, index) => (
+        {[element]: listPrices[index]}
+    ));
+    return novaLista;
+};
+
+console.log(newProductsList(products, prices));
+// const listProducts = [{ Arroz: 2.99 },...]
