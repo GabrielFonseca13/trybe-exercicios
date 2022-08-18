@@ -1,5 +1,3 @@
-// const arr = ['ana', 'luiz', 'gabriel'];
-
 // arr.filter((element, index, arrayCompleto) => {
 //     console.log(element,index,arrayCompleto);
 // });
@@ -48,9 +46,22 @@
 //    arrayDePessoas.filter((pessoa) => !(pessoa.age >= 18)); 
 //    console.log(cantDrive(objPeople));
 
-const arrayMyStudents = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
+// const arrayMyStudents = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
 
-const removeStudent = (nome, arraydePessoas) =>
-    arraydePessoas.filter((pessoa) => pessoa !=nome);
+// const removeStudent = (nome, arraydePessoas) =>
+//     arraydePessoas.filter((pessoa) => pessoa !=nome);
 
-    console.log(removeStudent('Ricardo', arrayMyStudents));
+//     console.log(removeStudent('Ricardo', arrayMyStudents));
+
+const pessoas = ['Maria','Jose','Nilce','Rafael'];
+
+// const novasPessoas = pessoas.map((elemento) => elemento.toUpperCase());
+
+const novasPessoas = pessoas.map((elemento) => {
+    const registro = {};
+    registro.nome = elemento.toUpperCase();
+    registro.empresa = 'Trybe';
+    return registro;
+})
+
+console.log(novasPessoas);
