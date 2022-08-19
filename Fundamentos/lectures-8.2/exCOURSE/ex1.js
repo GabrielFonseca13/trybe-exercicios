@@ -42,10 +42,18 @@ const books = require('./base.js');
 
 // 4 - Ordene os livros por data de lançamento em ordem decrescente.
 
-const sortReleaseYear = (array) => {
-    buscaLivros = array.sort((livroA , livroB)=> livroB.releaseYear - livroA.releaseYear);
-    // buscaLivros.releaseYear.sort((a,b)=> a-b);
-    return buscaLivros
-}
+// const sortReleaseYear = (array) => {
+//     buscaLivros = array.sort((livroA , livroB)=> livroB.releaseYear - livroA.releaseYear);
+//     // buscaLivros.releaseYear.sort((a,b)=> a-b);
+//     return buscaLivros
+// }
 
-console.log(sortReleaseYear(books));
+// console.log(sortReleaseYear(books));
+
+// 🚀 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
+
+const verifyAuthorBorn = (array) => {
+    const verifyCenturyBorn = array.every((element) => element.author.birthYear >= 1901 &&  element.author.birthYear <= 2001)
+    return verifyCenturyBorn;
+}
+console.log(verifyAuthorBorn(books));
