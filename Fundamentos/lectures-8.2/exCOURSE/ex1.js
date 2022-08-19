@@ -52,8 +52,17 @@ const books = require('./base.js');
 
 // 🚀 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
 
-const verifyAuthorBorn = (array) => {
-    const verifyCenturyBorn = array.every((element) => element.author.birthYear >= 1901 &&  element.author.birthYear <= 2001)
-    return verifyCenturyBorn;
-}
-console.log(verifyAuthorBorn(books));
+// const verifyAuthorBorn = (array) => {
+//     const verifyCenturyBorn = array.every((element) => element.author.birthYear >= 1901 &&  element.author.birthYear <= 2001)
+//     return verifyCenturyBorn;
+// }
+// console.log(verifyAuthorBorn(books));
+
+// 🚀 6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
+
+const verifyRelease80Decade = (array) => {
+    const verifyReleaseYear = array.some((elemento) => elemento.releaseYear >= 1980 && elemento.releaseYear <= 1989);
+    return verifyReleaseYear;
+};
+console.log(verifyRelease80Decade(books));
+
