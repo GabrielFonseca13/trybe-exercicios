@@ -33,9 +33,19 @@ const books = require('./base.js');
 
 // 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
 
-const findLettersBook = (array) => {
-    const localizaBook = array.find((elemento) => elemento.name.length === 26);
-    return localizaBook;
+// const findLettersBook = (array) => {
+//     const localizaBook = array.find((elemento) => elemento.name.length === 26);
+//     return localizaBook;
+// }
+
+// console.log(findLettersBook(books, 26));
+
+// 4 - Ordene os livros por data de lançamento em ordem decrescente.
+
+const sortReleaseYear = (array) => {
+    buscaLivros = array.sort((livroA , livroB)=> livroB.releaseYear - livroA.releaseYear);
+    // buscaLivros.releaseYear.sort((a,b)=> a-b);
+    return buscaLivros
 }
 
-console.log(findLettersBook(books, 26));
+console.log(sortReleaseYear(books));
