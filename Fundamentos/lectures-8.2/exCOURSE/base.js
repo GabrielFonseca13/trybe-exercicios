@@ -61,10 +61,5 @@ const books = [
     },
   ];
   
-//   const showObject = () => {
-//     return console.log();
-// };
-
-// showObject(books); 
 
 module.exports = books;

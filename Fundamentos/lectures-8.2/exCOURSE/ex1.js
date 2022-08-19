@@ -60,9 +60,19 @@ const books = require('./base.js');
 
 // 🚀 6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
 
-const verifyRelease80Decade = (array) => {
-    const verifyReleaseYear = array.some((elemento) => elemento.releaseYear >= 1980 && elemento.releaseYear <= 1989);
-    return verifyReleaseYear;
-};
-console.log(verifyRelease80Decade(books));
+// const verifyRelease80Decade = (array) => {
+//     const verifyReleaseYear = array.some((elemento) => elemento.releaseYear >= 1980 && elemento.releaseYear <= 1989);
+//     return verifyReleaseYear;
+// };
+// console.log(verifyRelease80Decade(books));
 
+// 7 - Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+
+const verifyAuthorBornSameYear = (array) => {
+    const itera1 = array.every((livro) => {
+        array.some((livroSome) => (livroSome.author.birthYear === livro.author.birthYear) && (livroSome => livroSome.author.name !== livro.author.name));
+    })
+        return itera1;;
+}
+
+console.log(verifyAuthorBornSameYear(books));
