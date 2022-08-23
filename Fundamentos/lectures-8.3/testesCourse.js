@@ -90,13 +90,20 @@
 const products = ['Arroz', 'Feijão', 'Alface', 'Tomate'];
 const prices = [2.99, 3.99, 1.5, 2];
 
-const newList = (arrayProducts, arrayPrices) => {
-    const newlist = arrayProducts.map((produto) => {
-    const listapreco = arrayPrices.map((preco) => {
-        return `${produto} - ${preco}`
-    })
-    })
-    return listapreco 
-}
+const newProductsList = (listProducts, listPrices) => {
+    const novaLista = listProducts.map((element, index) => (
+        {[element]: listPrices[index]}
+    ));
+    return novaLista;
+};
 
-console.log(newList(products, prices));
+console.log(newProductsList(products, prices));
+// const listProducts = [{ Arroz: 2.99 },...]
+
+const newListProducts = (arrayProducts, arrayPrices) => {
+    const novalista = arrayProducts.map((produto, index) => ( 
+        {[produto]: arrayPrices[index]}
+    ));
+    return novalista;
+};
+console.log(newListProducts(products, prices));
