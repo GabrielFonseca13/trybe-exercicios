@@ -9,7 +9,8 @@ const expectedResult = [
     'Fundação - Ficção Científica - Isaac Asimov',
     'Duna - Ficção Científica - Frank Herbert',
     'A Coisa - Terror - Stephen King',
-    'O Chamado de Cthulhu - Terrs
+    'O Chamado de Cthulhu - Terrs'
+]
   
  function formatedBookNames(arrayBooks) {
  return arrayBooks.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
