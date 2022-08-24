@@ -80,9 +80,33 @@ const reduceNames = (array) => {
 // const expectedResult = 43;
 
 const averageAge = (array) => {
-    const searchRealeaseAge = array.reduce((somaIdade, livro) => {
-        return somaIdade + (livro.releaseYear - livro.author.birthYear);
-    }, 0);
+    const searchRealeaseAge = array.reduce((somaIdade, livro) => somaIdade + (livro.releaseYear - livro.author.birthYear), 0);
     return searchRealeaseAge / array.length
 }
-console.log(averageAge(books));
+// console.log(averageAge(books));
+
+// 🚀 4- Encontre o livro com o maior nome.
+
+// const expectedResult = {
+//     id: 1,
+//     name: 'As Crônicas de Gelo e Fogo',
+//     genre: 'Fantasia',
+//     author: {
+//       name: 'George R. R. Martin',
+//       birthYear: 1948,
+//     },
+//     releaseYear: 1991,
+//   };
+  
+    const longestNamedBook = (array) => {
+        const getBiggerName = array.reduce((livroMaiorNome, livro) => {
+            if ((livroMaiorNome.name).length < (livro.name).length){
+                return livro;
+            } else {
+                return livroMaiorNome;
+            }
+        })
+        return getBiggerName;
+  }
+
+  console.log(longestNamedBook(books));
