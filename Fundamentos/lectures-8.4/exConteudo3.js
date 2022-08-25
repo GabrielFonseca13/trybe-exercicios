@@ -16,7 +16,7 @@ const expectedResult = [
     return materia;
   };
 
-  const reportBetter = (students) => students.map((student) => ({
+  const reportBetter = (students) => students.map((student) => sss({
     name: student.nome,
     materia: student.materias.reduce(getBestClass).name}));
     
