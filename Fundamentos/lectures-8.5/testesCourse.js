@@ -80,22 +80,34 @@
 // console.log(weekdays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 
-const student = {
-  a: 'Maria',
-  b: 'Turma B',
-  c: 'Matematica',
+// const student = {
+//   a: 'Maria',
+//   b: 'Turma B',
+//   c: 'Matematica',
+// };
+
+// const { a: name, b: classAssigned, c: subject } = student;
+
+// console.log(name); // Maria
+// console.log(classAssigned); // Turma B
+// console.log(subject); // Matemática
+
+// const studente = {
+//   a: 'Maria',
+//   b: 'Turma B',
+//   c: 'Matematica',
+// };
+// const nome = studente.a;
+// console.log(nome); // Maria
+
+const product = {
+  name: 'Smart TV Crystal UHD',
+  price: '1899.05',
+  seller: 'Casas de Minas',
 };
 
-const { a: name, b: classAssigned, c: subject } = student;
-
-console.log(name); // Maria
-console.log(classAssigned); // Turma B
-console.log(subject); // Matemática
-
-const studente = {
-  a: 'Maria',
-  b: 'Turma B',
-  c: 'Matematica',
+const printProductDetails = ({ name, price, seller }) => {
+  console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
 };
-const nome = studente.a;
-console.log(nome); // Maria
+
+printProductDetails(product); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
