@@ -67,14 +67,35 @@
 // console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
 
 
-const daysOfWeek = {
-  workDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-  weekend: ['Saturday', 'Sunday'],
+// const daysOfWeek = {
+//   workDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+//   weekend: ['Saturday', 'Sunday'],
+// };
+
+// const { workDays, weekend } = daysOfWeek;
+// console.log(workDays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+// console.log(weekend); // ['Saturday', 'Sunday']
+
+// const weekdays = [...workDays, ...weekend];
+// console.log(weekdays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+
+const student = {
+  a: 'Maria',
+  b: 'Turma B',
+  c: 'Matematica',
 };
 
-const { workDays, weekend } = daysOfWeek;
-console.log(workDays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-console.log(weekend); // ['Saturday', 'Sunday']
+const { a: name, b: classAssigned, c: subject } = student;
 
-const weekdays = [...workDays, ...weekend];
-console.log(weekdays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+console.log(name); // Maria
+console.log(classAssigned); // Turma B
+console.log(subject); // Matemática
+
+const studente = {
+  a: 'Maria',
+  b: 'Turma B',
+  c: 'Matematica',
+};
+const nome = studente.a;
+console.log(nome); // Maria
