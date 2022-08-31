@@ -38,10 +38,30 @@
 //   console.log(quantosParams(0, 1, 2)); // Você passou 3 parâmetros para a função.
 //   console.log(quantosParams('string', null, [1, 2, 3], { })); // Você passou 4 parâmetros para a função.
 
-const product = {
-  name: 'Smart TV Crystal UHD',
-  price: '1899.05',
-  seller: 'Casas de Minas',
+// const product = {
+//   name: 'Smart TV Crystal UHD',
+//   price: '1899.05',
+//   seller: 'Casas de Minas',
+// };
+// const { name } = product;
+// console.log(name); // Smart TV Crystal UHD
+
+// definindo o objeto
+const character = {
+  name: 'Luke SkyWalker',
+  age: '53',
+  description: {
+    specieName: 'Human',
+    jedi: true,
+  },
+  homeWorld: {
+    name: 'Tatooine',
+    population: '200000',
+  },
 };
-const { name } = product;
-console.log(name); // Smart TV Crystal UHD
+
+// desestruturando o objeto:
+const { name, age, homeWorld: { name: planetName }, description: { jedi } } = character;
+
+// imprimindo os valores:
+console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
