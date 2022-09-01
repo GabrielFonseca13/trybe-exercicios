@@ -1,7 +1,6 @@
-// 3 - Escreva a função personLikes, que dado um objeto de parâmetro que representa uma pessoa (variáveis alex e gunnar), retorna todos os gostos daquela pessoa, conforme mostrado abaixo:
+// 3 - Escreva a função personLikes, que dado um objeto de parâmetro que representa uma pessoa (variáveis alex e gunnar), 
+//retorna todos os gostos daquela pessoa, conforme mostrado abaixo:
 // Dica: use object destructuring.
-
-
 //<!-- name: nome da pessoa, age: idade, likes: gosta de, nationality: nacionalidade -->
 
 const alex = {
@@ -19,7 +18,7 @@ const gunnar = {
 };
 
 // complete a assinatura da função abaixo
-const personLikes = () => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+const personLikes = ({ name, age, likes }) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
 
 //<!-- <nome> tem <anos de idade> e gosta de <gostos da pessoa> -->
 
