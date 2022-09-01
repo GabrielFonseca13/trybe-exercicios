@@ -45,13 +45,13 @@
 
 // ########## OBJECT DESTRUCTURING ################
 
-const product = {
-  name: 'Smart TV Crystal UHD',
-  price: '1899.05',
-  seller: 'Casas de Minas',
-};
-const { name, seller } = product;
-console.log(name, seller); // Smart TV Crystal UHD
+// const product = {
+//   name: 'Smart TV Crystal UHD',
+//   price: '1899.05',
+//   seller: 'Casas de Minas',
+// };
+// const { name, seller } = product;
+// console.log(name, seller); // Smart TV Crystal UHD
 
 // ########## OBJECT DESTRUCTURING EM OBJETO QUE CONTEM OBJETO ################
 

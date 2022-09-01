@@ -34,4 +34,11 @@ const trappistEnterpriseEmployees = {
   ...jobInfos
 };
 
-console.log(trappistEnterpriseEmployees);
+// console.log(trappistEnterpriseEmployees);
+
+// 2 - Com o objeto em mãos, imprima no console uma frase utilizando os dados do objeto criado anteriormente. Para isso, utilize a desestruturação de objetos em conjunto com template literals.
+// Exemplo "Hi, my name is Maria, I'm 21 years old and I'm Brazilian. I work as a Software engineer and my squad is RLL-Rocket Landing Logic"
+
+const {name, age, nationality, profession, squad, squadInitials} = trappistEnterpriseEmployees;
+
+console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}.`);
