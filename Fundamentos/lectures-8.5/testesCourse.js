@@ -1,3 +1,5 @@
+// ########## SPREAD OPERATOR ################
+
 // // const carros = ['Gol','Palio','HB20'];
 // // const motos = ['Biz', 'Hornet'];
 
@@ -5,6 +7,7 @@
 
 // // console.log(veiculos);
 
+// ########## SPREAD OPERATOR COM OBJETOS ################
 // const pessoa = {
 //     nome: 'Gabriel',
 //     idade: 29,
@@ -26,6 +29,8 @@
 
 // console.log(pessoaTryber);
 
+// ########## PARAMETRO REST ################
+
 // const sum = (...args) => args.reduce((acc, curr) => acc + curr, 0);
 
 // console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
@@ -38,13 +43,17 @@
 //   console.log(quantosParams(0, 1, 2)); // Você passou 3 parâmetros para a função.
 //   console.log(quantosParams('string', null, [1, 2, 3], { })); // Você passou 4 parâmetros para a função.
 
-// const product = {
-//   name: 'Smart TV Crystal UHD',
-//   price: '1899.05',
-//   seller: 'Casas de Minas',
-// };
-// const { name } = product;
-// console.log(name); // Smart TV Crystal UHD
+// ########## OBJECT DESTRUCTURING ################
+
+const product = {
+  name: 'Smart TV Crystal UHD',
+  price: '1899.05',
+  seller: 'Casas de Minas',
+};
+const { name, seller } = product;
+console.log(name, seller); // Smart TV Crystal UHD
+
+// ########## OBJECT DESTRUCTURING EM OBJETO QUE CONTEM OBJETO ################
 
 // definindo o objeto
 // const character = {
@@ -66,6 +75,7 @@
 // // imprimindo os valores:
 // console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
 
+// ########## OBJECT DESTRUCTURING COM SPREAD OPERATOR ################
 
 // const daysOfWeek = {
 //   workDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -79,6 +89,7 @@
 // const weekdays = [...workDays, ...weekend];
 // console.log(weekdays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
+// ########## OBJECT DESTRUCTURING - RENOMEANDO AS CHAVES DO OBJETO ################
 
 // const student = {
 //   a: 'Maria',
@@ -100,14 +111,16 @@
 // const nome = studente.a;
 // console.log(nome); // Maria
 
-const product = {
-  name: 'Smart TV Crystal UHD',
-  price: '1899.05',
-  seller: 'Casas de Minas',
-};
+// ########## OBJECT DESTRUCTURING COMO ARGUMENTOS DE UMA FUNÇÃO ################
 
-const printProductDetails = ({ name, price, seller }) => {
-  console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
-};
+// const product = {
+//   name: 'Smart TV Crystal UHD',
+//   price: '1899.05',
+//   seller: 'Casas de Minas',
+// };
 
-printProductDetails(product); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
+// const printProductDetails = ({ name, price, seller }) => {
+//   console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
+// };
+
+// printProductDetails(product); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas

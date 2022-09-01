@@ -1,3 +1,5 @@
+// ########### SPREAD OPERATOR #############
+
 // Faça uma lista com as suas frutas favoritas
 const specialFruit = ['Kiwi', 'Mango', 'Avocado'];
 
