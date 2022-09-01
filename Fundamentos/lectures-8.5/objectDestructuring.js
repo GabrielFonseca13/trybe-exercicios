@@ -5,12 +5,12 @@ const product = {
   price: '1899.05',
   seller: 'Casas de Minas',
 };
-const { name, seller } = product;
-console.log(name, seller); // Smart TV Crystal UHD
+const { name1, seller } = product;
+console.log(name1, seller); // Smart TV Crystal UHD
 
 // ########## OBJECT DESTRUCTURING EM OBJETO QUE CONTEM OBJETO ################
 
-definindo o objeto
+// definindo o objeto
 const character = {
   name: 'Luke SkyWalker',
   age: '53',
@@ -25,10 +25,10 @@ const character = {
 };
 
 // desestruturando o objeto:
-const { name, age, homeWorld: { name: planetName }, description: { jedi } } = character;
+const { name2, age, homeWorld: { name: planetName }, description: { jedi } } = character;
 
 // imprimindo os valores:
-console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
+console.log(`Esse é o ${name2}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
 
 // ########## OBJECT DESTRUCTURING COM SPREAD OPERATOR ################
 
@@ -68,7 +68,7 @@ console.log(nome); // Maria
 
 // ########## OBJECT DESTRUCTURING COMO ARGUMENTOS DE UMA FUNÇÃO ################
 
-const product = {
+const product2 = {
   name: 'Smart TV Crystal UHD',
   price: '1899.05',
   seller: 'Casas de Minas',
@@ -78,4 +78,4 @@ const printProductDetails = ({ name, price, seller }) => {
   console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
 };
 
-printProductDetails(product); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
+printProductDetails(product2); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
