@@ -29,6 +29,31 @@
               <input type="radio" name="tipo-palestra" id="tipo2">
               <label for="tipo2">Workshop</label>
             </fieldset>
+
+          </div>
+          <div class="line-content">
+            <label for="">Tamanho da camiseta:</label>
+            <select name="camiseta" id="camiseta">
+              <option value="p">P</option>
+              <option value="m">M</option>
+              <option value="g">G</option>
+              <option value="gg">GG</option>
+            </select>
+          </div>
+          <div class="line-content">
+            <label for="">Resumo:</label>
+            <textarea name="resumo" id="resumo" cols="40" rows="10" placeholder="Descreva a palestra!"></textarea>
+            <span class="instrucoes">Descreva a sua palestra em 500 palavras ou menos.</span>
+          </div>
+          <div class="line-content">
+            <label for="disponicilidade">
+              <input type="checkbox" name="disponibilidade" id="disponicilidade" value="disponilidade-ok">
+              <span>Tenho disponibilidade para participar do evento nesta data.</span>
+            </label>
+          </div>
+          <div class="line-content">
+            <button class="btn-enviar" type="submit">Enviar
+            </button>
           </div>
         </section>
       </form>

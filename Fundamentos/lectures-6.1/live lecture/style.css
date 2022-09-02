@@ -32,7 +32,7 @@
   margin-bottom: 40px;
 }
 
-.form-content input[type="text"] {
+.form-content input[type="text"], textarea {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(214, 217, 220);
   border: 3px;
@@ -48,4 +48,28 @@
 .line-content {
   margin: 20px;
   border: 0 none;
+}
+
+fieldset{
+  padding: 10pxs;
+}
+
+.instrucoes {
+  color: #999;
+  font-size: 13px;
+}
+
+.btn-enviar{
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #5995da;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+background-color: #76aeed;
 }
