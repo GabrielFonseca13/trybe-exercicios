@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-be">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Submeter palestra</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="speaker-form-header">
-        <p><em>Quer participar da nossa conferência? Preencha o formulário!</em></p>
+      <h1>SUBMETER PALESTRA</h1>
+      <p>
+        <em>Quer participar da nossa conferência? Preencha o formulário!</em>
+      </p>
     </header>
-</body>
+    <main>
+      <form action=" " method="get" class="speaker-form">
+        <section class="form-content">
+          <div class="line-content">
+            <label for="full-name"> Nome: </label>
+            <input type="text" name="full-name" id="full-name" />
+          </div>
+          <div class="line-content">
+            <fieldset>
+              <legend>Tipo de palestra</legend>
+              <input type="radio" name="tipo-palestra" id="tipo1">
+              <label for="tipo1">Sala Principal</label>
+              <input type="radio" name="tipo-palestra" id="tipo2">
+              <label for="tipo2">Workshop</label>
+            </fieldset>
+          </div>
+        </section>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
