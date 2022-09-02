@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULÁRIO</title>
+  </head>
+  <body>
+    <header>
+      <h1>FORMULÁRIO COMPLETO</h1>
+    </header>
+    <form action="" method="get">
+      <main>
+        <section>
+          <label for="input-name"
+            >Nome Completo:
+            <input
+              type="text"
+              name="nomeCompleto"
+              id="input-name"
+              placeholder="Digite o seu nome"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <br />
+          <br />
+          <label for="input-email"
+            >E-mail:
+            <input
+              type="email"
+              name="emailuser"
+              id="input-email"
+              placeholder="Digite o seu email"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <br />
+          <br />
+          <label for="input-estado"
+            >Estado onde você mora:
+            <select name="estado" id="input-estado">
+              <option value="" name="" id=""></option>
+              <option value="sp" name="estado" id="estado1">SÃO PAULO</option>
+              <option value="mg" name="estado" id="estado2">
+                MINAS GERAIS
+              </option>
+              <option value="rj" name="estado" id="estado3">
+                RIO DE JANEIRO
+              </option>
+            </select>
+          </label>
+          <br />
+          <br />
+        </section>
+        <section>
+          <p>Selecione a sua foto:</p>
+          <input type="file" name="foto-perfil" id="input-foto" />
+          <br />
+
+          <p>Comidas favoritas:</p>
+          <label for="comida1">
+            <input type="radio" name="comida" id="comida1" />PIZZA
+          </label>
+          <label for="comida2">
+            <input type="radio" name="comida" id="comida2" />SUSHI
+          </label>
+          <label for="comida3">
+            <input type="radio" name="comida" id="comida3" />HAMBURGUER
+          </label>
+          <label for="comida4">
+            <input type="radio" name="comida" id="comida4" checked />TODAS AS
+            ALTERNATIVAS
+          </label>
+        </section>
+        <section>
+          <p>Escreva algo sobre você:</p>
+          <textarea
+            name="fale-sobre-voce"
+            id="input-text-yourself"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <br />
+          <p>Digite a sua senha</p>
+          <input
+            type="password"
+            name="senha"
+            placeholder="Digite a sua senha"
+            required
+          />
+          <input
+            type="checkbox"
+            name="subscribeNewsletter"
+            id="insput-nesletter"
+          />
+          Desejo receber notícias e promoções maravilhosas??
+          <br />
+          <br>
+          <button type="submit" id="submitButton">ENVIAR FORMULÁRIO</button>
+        </section>
+      </main>
+    </form>
+  </body>
+</html>
