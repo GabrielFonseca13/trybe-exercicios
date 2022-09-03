@@ -5,13 +5,11 @@
 }
 
 .speaker-form-header{
-  text-align: center;
-  background-color: rgb(241, 244, 246);
+  background-color: rgb(195, 197, 199);
   border: 1px, solid, rgb(97, 111, 124);
   border-radius: 3px;
-  width: 80%;
-  margin: 40px auto;
-  padding: 50px;
+  /* margin: 40px auto; */
+  /* padding: 50px; */
 }
 
 .speaker-form-header h1{
@@ -20,12 +18,11 @@
 }
 
 .speaker-form {
-  background-color: rgb(241, 244, 246);
+  background-color: rgb(139, 147, 152);
   border: 1px, solid, rgb(97, 111, 124);
   border-radius: 3px;
-  width: 80%;
-  margin: 40px auto;
-  padding: 50px;
+  /* margin: 40px auto; */
+  /* padding: 50px; */
 }
 
 .form-content {
