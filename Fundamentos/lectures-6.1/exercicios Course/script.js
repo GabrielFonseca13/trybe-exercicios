@@ -1,18 +1,7 @@
-// Nome Completo:
-// Limitado entre 10 e 40 caracteres.
-const fullname = getElementById('full-name')
- 
-//E-mail:
-// Limitado entre 10 e 50 caracteres.
- 
-// Destino Preferido:
-// 4 opções: Cidade, Campo, Praia, Montanhas.
- 
-// Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
-// Limite de 500 caracteres.
- 
-// Qual a melhor data para realizar sua viagem? 
+// Interrompa o comportamento padrão do botão submit utilizando o método preventDefault(). Nossa amiga Carol Silva nos contou um pouco sobre como fazer isso, lembra?
 
-// Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+const btnsubmit = document.getElementById('btn1');
 
-// Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+btnsubmit.addEventListener('click', (event)=>{
+  event.preventDefault();
+});
