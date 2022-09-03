@@ -10,47 +10,55 @@
   <body>
     <header class="cabecalho">
       <h1 id="main-title">TRYBE TRIP</h1>
+      <h2 id="subtitle">Concorra à viagem dos seus sonhos</h2>
     </header>
     <main>
       <form action="" method="get" class="trip-form">
         <section class="form-content">
           <div class="line-content">
             <label for="full-name" class="">Nome:</label>
-            <input type="text" name="full-name" id="full-name" />
+            <input type="text" name="full-name" id="full-name" placeholder="Digite seu nome" maxlength="40" minlength="10" required/>
           </div>
           <div class="line-content">
             <label for="user-email" class="">Email:</label>
-            <input type="email" name="user-email" id="user-email" />
+            <input type="email" name="user-email" id="user-email" placeholder="Digite seu e-mail" minlength="10" maxlength="50" required/>
+          </div>
+          <div class="line-content">
+            <span id="span-Destino">Destino Preferido:</span>
           </div>
           <div class="line-content">
             <input type="radio" name="destino" class="radiobtn" id="destino1" />
-            <label for="destino1">Destino 1</label>
+            <label for="destino1">Cidade</label>
             <input type="radio" name="destino" class="radiobtn" id="destino2" />
-            <label for="destino2">Destino 2</label>
+            <label for="destino2">Campo</label>
             <input type="radio" name="destino" class="radiobtn" id="destino3" />
-            <label for="destino3">Destino 3</label>
+            <label for="destino3">Praia</label>
             <input type="radio" name="destino" class="radiobtn" id="destino4" />
-            <label for="destino4">Destino 4</label>
+            <label for="destino4">Montanha</label>
           </div>
           <div class="line-content">
-            <h3 class="" id="answer-title">Escreva sua resposta:</h3>
+            <p class="text" id="" >Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <br>
+            <p class="text" id="">Escreva sua resposta:</p>
             <textarea
               name="answer"
               id="answer-area"
               cols="30"
               rows="10"
+              maxlength="500"
             ></textarea>
           </div>
           <div class="line-content">
+            <p class="text" id="">Qual a melhor data para realizar sua viagem?</p>
             <label for="date-trip"> Data:</label>
             <input type="date" name="date-trip" id="date-trip">
           </div>
-          <div class="line-content">
-            <label for="">concordo 1</label>
+          <div class="line-content">            
             <input type="checkbox" class="input-checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
             <br>
-            <label for="">concordo 2</label>
             <input type="checkbox" class="input-checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
           </div>
         </section>
         <section class="btn-content">

@@ -7,9 +7,7 @@
 .cabecalho{
   margin: 15px;
 }
-.trip-form {
 
-}
 .form-content{
   border: 3px solid black;
   width: 50%;
@@ -19,6 +17,10 @@
 
 .line-content {
   margin: 15px;
+}
+
+.input-checkbox{
+  margin-top: 15px;
 }
 
 .btn {
