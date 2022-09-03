@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Viagem Trybe</title>
-</head>
-<body>
-  <header class="cabecalho">
-    <h1 id="main-title">TRYBE TRIP</h1>
-  </header>
-  <main>
-    <form action="" method="get" class="trip-form">
-      <section class="identification-content">
-        <div class="line-content">
-          <label for="full-name" class="">Nome:</label>
-          <input type="text" name="full-name" id="full-name"/>
-        </div>
-        <div class="line-content">
-          <label for="user-email" class="">Email:</label>
-          <input type="email" name="user-email" id="user-email"/>
-        </div>
-      </section>
-      <section class="destiny-content">
-        <div class="line-content">
-          <input type="radio" name="destino" class="radiobtn" id="destino1">
-          <label for="destino1">Destino 1</label>
-          <input type="radio" name="destino" class="radiobtn" id="destino2">
-          <label for="destino2">Destino 2</label>
-          <input type="radio" name="destino" class="radiobtn" id="destino3">
-          <label for="destino3">Destino 3</label>
-          <input type="radio" name="destino" class="radiobtn" id="destino4">
-          <label for="destino4">Destino 4</label>
-        </div>
-      <div class="line-content"></div>
-      </section>
-      <section class="answer-content">
-        <div class="line-contant">
-          <h3 class="" id="answer-title">Escreva sua resposta:</h3>
-          <textarea name="answer" id="answer-area" cols="30" rows="10"></textarea>
-        </div>
-      </section>
-    </form>   
-  </main>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Viagem Trybe</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 id="main-title">TRYBE TRIP</h1>
+    </header>
+    <main>
+      <form action="" method="get" class="trip-form">
+        <section class="form-content">
+          <div class="line-content">
+            <label for="full-name" class="">Nome:</label>
+            <input type="text" name="full-name" id="full-name" />
+          </div>
+          <div class="line-content">
+            <label for="user-email" class="">Email:</label>
+            <input type="email" name="user-email" id="user-email" />
+          </div>
+          <div class="line-content">
+            <input type="radio" name="destino" class="radiobtn" id="destino1" />
+            <label for="destino1">Destino 1</label>
+            <input type="radio" name="destino" class="radiobtn" id="destino2" />
+            <label for="destino2">Destino 2</label>
+            <input type="radio" name="destino" class="radiobtn" id="destino3" />
+            <label for="destino3">Destino 3</label>
+            <input type="radio" name="destino" class="radiobtn" id="destino4" />
+            <label for="destino4">Destino 4</label>
+          </div>
+          <div class="line-content">
+            <h3 class="" id="answer-title">Escreva sua resposta:</h3>
+            <textarea
+              name="answer"
+              id="answer-area"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="line-content">
+            <label for="date-trip"> Data:</label>
+            <input type="date" name="date-trip" id="date-trip">
+          </div>
+          <div class="line-content">
+            <label for="">concordo 1</label>
+            <input type="checkbox" class="input-checkbox" name="checkbox1" id="checkbox1">
+            <br>
+            <label for="">concordo 2</label>
+            <input type="checkbox" class="input-checkbox" name="checkbox2" id="checkbox2">
+          </div>
+        </section>
+        <section class="btn-content">
+          <button type="submit" id="btn1" class="btn">Enviar</button>
+          <button type="reset" id="btn2" class="btn">Apagar</button>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
