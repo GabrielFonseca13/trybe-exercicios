@@ -1,0 +1,330 @@
+/* Referencias para pesquisas
+https://www.w3schools.com/cssref/css_units.asp
+https://www.w3schools.com/chttps://www.w3schools.com/cssref/css3_pr_background-clip.asp
+https://www.w3schools.com/cssref/pr_pos_z-index.asp */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilização cabeçalho */
+header {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+header img {
+  width: 200px;
+}
+
+header a {
+  color: #191c03;
+}
+
+header nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+/* Estilização hero */
+.hero {
+  background-image: url(images/hero.jpeg);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.hero .btn {
+  background-color: white;
+  border-radius: 4px;
+  color: #191c03;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+
+/* Estilização conheça o hotel */
+.know-the-hotel {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.know-the-hotel h3 {
+  font-size: 25px;
+  margin-bottom: 35px;
+  color: #191c03;
+}
+
+.know-the-hotel p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #191c03;
+}
+
+.know-the-hotel hr {
+  width: 200px;
+  background-color: #191c03;
+  height: 2px;
+  border: none;
+  margin-bottom: 70px;
+}
+
+.know-the-hotel .grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li.small {
+  flex-basis: 40%;
+}
+
+li.large {
+  flex-basis: 60%;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+
+.know-the-hotel .grid li {
+  height: 350px;
+  padding: 20px;
+  border-radius: 4px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilização mais informações */
+.features {
+  background-color: #191c03;
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features h3 {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.features p {
+  max-width: 800px;
+  margin-bottom: 35px;
+}
+
+.features hr {
+  width: 200px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 70px;
+  border: none;
+}
+
+.features .grid {
+  width: 100%;
+  display: flex;
+}
+
+.features .grid li {
+  padding: 0 30px;
+}
+
+.features .grid li i {
+  color: #c3c63b;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.features .grid li h4 {
+  font-size: 25px;
+  color: #c3c63b;
+  margin-bottom: 30px;
+}
+
+/* Estilização newsletter do hotel */
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.newsletter h3 {
+  font-size: 25px;
+  margin-bottom: 35px;
+  color: #c3c63b;
+}
+
+.newsletter p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  color: #c3c63b;
+}
+
+.newsletter form {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.newsletter input {
+  padding: 15px;
+  border: 1px solid #c3c63b;
+  border-radius: 4px;
+  margin-right: 15px;
+  flex-grow: 2;
+}
+
+.newsletter button {
+  padding: 15px;
+  background-color: #c3c63b;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilização rodapé da página */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191c03;
+  color: #c3c63b;
+  padding: 50px 0;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+footer ul li i {
+  font-size: 25px;
+}
+
+footer ul li {
+  /* margin-right: 20px; */
+}
+/* Ultimo li filha */
+footer ul li:last-child {
+  /* margin-right: 0; */
+}
+/* Enésima li, no caso a primeira por causa do nr. 1 */
+footer ul li:nth-child(1) {
+  /* order: 1; */
+}
+/* Enésima li, no caso a segunda por causa do nr. 2 */
+footer ul li:nth-child(2) {
+  order: 2;
+}
+/* Enésima li, no caso a terceira por causa do nr. 3 */
+footer ul li:nth-child(3) {
+  /* order: 3; */
+}
+/* Enésima li, no caso a quarta por causa do nr. 4 */
+footer ul li:nth-child(4) {
+  /* order: 4; */
+}
+
+@media screen and (max-width: 600px){
+  /* header não fica fixo, centralizar logo e ; */
+  header {
+    position: absolute;
+    justify-content: center;
+  }
+  /* remover links */
+  header nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero h2 {
+    font-size: 1em;
+  }
+
+  li.small {
+    flex-basis: 100%;
+  }
+
+  li.large {
+    flex-basis: 100%;
+  }
+
+  .features .grid {
+    flex-direction: column;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter form button {
+    margin-top: 20px;
+  }
+
+  .newsletter form input {
+    margin-right: 0;
+  }
+
+  footer ul li i {
+    font-size: 50px;
+  }
+}

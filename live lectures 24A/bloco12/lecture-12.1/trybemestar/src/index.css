@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Digital";
+  src: local("Digital"), url(./assets/digital.woff) format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+h2 {
+  font-size: 100px;
+  font-weight: 500;
+  color: #2fc18c;
+  text-align: center;
+  font-family: Digital, "sans-serif";
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: extrabold;
+  color: #444955;
+  text-align: center;
+}
+
+button {
+  font-family: Digital, "sans-serif";
+  background-color: transparent;
+  border: 2px solid #2fc18c;
+  color: #2fc18c;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 400px;
+}
+
+section {
+  border: 2px solid #2fc18c;
+  margin: 20px 0;
+}

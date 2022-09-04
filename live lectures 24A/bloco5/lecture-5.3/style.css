@@ -1,0 +1,41 @@
+.car {
+  background-image: url(https://www.nicepng.com/png/full/301-3010748_f1-car-icon-free-png-and-vector-car.png);
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+}
+
+.title-heading {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: xxx-large;
+}
+
+.center {
+  padding: 10px;
+  text-align: center;
+}
+
+.car-section {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.car1 {
+  background-color: #00a6ff;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.car2 {
+  background-color: #cdaf16;
+  margin-left: 0px;
+}
+
+.button{
+  background-color: dodgerblue;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}

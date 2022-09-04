@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 1px solid red;
+  font-family: 'Montserrat', sans-serif;
+}
+p,
+li {
+  color: #475550;
+  font-size: 16px;
+}
+
+.trybe-green {
+  color: limegreen;
+}
+
+.titulos-de-secao {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+.button {
+  padding: 15px 30px;
+  /* border: 2px solid red; */
+  background-color: #11a36a;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.imagem-redonda {
+  /* border-radius: 50% 10% 25% 5%; */
+  border-radius: 50%;
+}
+
+.cabecalho {
+  /* border: 1px solid blue; */
+  margin: 10px;
+  background-image: url(images/smiling-image.jpg);
+  background-size: cover;
+  background-position: 50% 25%;
+  padding: 60px 30px 40px;
+}
+
+.texto-cabecalho {
+  /* border: 1px solid red; */
+  max-width: 600px;
+}
+
+.texto-cabecalho h1 {
+  color: lightgreen;
+}
+
+.texto-cabecalho p {
+  width: 80%;
+}
+
+.market {
+  padding: 70px 30px;
+}
+
+.market p {
+  max-width: 60%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.secao-depoimentos {
+  padding: 30px 70px 90px 70px;
+  text-align: center;
+}
+
+.depoimento {
+  width: 30%;
+  margin: 5px;
+  display: inline-block;
+}
+
+.depoimento h4 {
+  margin-top: 20px;
+}
+.depoimento p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.secao-formacao{
+  padding: 30px 70px;
+  background-color: cadetblue;
+  min-height: 450px;
+}
+
+.secao-formacao img {
+  float: right;
+  width: 48%;
+  max-width: 350px;
+}
+
+.secao-formacao ul {
+  float: left;
+  width: 48%;
+}
+.secao-formacao li {
+  margin-bottom: 25px;
+  list-style-type: square;
+}
+
+.rodape {
+  text-align: center;
+  padding: 30px;
+}
+
+.rodape a {
+  display: block;
+  width: 290px;
+  margin: 25px auto;
+}
+
+#titulo {
+  /* color: #0a7e51; */
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}

@@ -1,0 +1,76 @@
+main {
+  color: #fff;
+  font-size: larger;
+  background-color: green;
+  height: 800px;
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+p {
+  font-size: 22px;
+}
+
+.titulo {
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.inclusao {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.inclusao label {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+input[type='text'],
+input[type='number'] {
+  padding: 12px 16px;
+  margin: 0 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#nome {
+  width: 320px;
+}
+
+#idade {
+  width: 90px;
+}
+
+.areaBotoes {
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnAdicionar {
+  color: green;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  padding: 12px 10px;
+  font-size: large;
+}
+
+.btnLimpar {
+  color: rgb(189, 209, 4);
+  background-color: rgb(6, 24, 96);
+  border-radius: 10px;
+  padding: 12px 10px;
+  font-size: large;
+}

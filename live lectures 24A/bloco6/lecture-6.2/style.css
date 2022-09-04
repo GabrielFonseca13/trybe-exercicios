@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.speaker-form-header {
+  background-color: rgb(246,247,248);
+  border: 1px solid rgb(214,217,220);
+  border-radius: 3px;
+  /* margin: 40px auto; */
+  padding: 50px;
+}
+
+.speaker-form-header h1 {
+  margin-bottom: 20px;
+}
+
+.speaker-form {
+  background-color: rgb(246,247,248);
+  border: 1px solid rgb(214,217,220);
+  border-radius: 3px;
+  padding: 50px;
+}
+
+/* .display-2{
+  color: red;
+}
+
+:root {
+  --bs-blue: #206819;
+} */

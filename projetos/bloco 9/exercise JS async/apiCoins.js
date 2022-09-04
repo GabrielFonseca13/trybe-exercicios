@@ -1,0 +1,4 @@
+const fetchCoins = async () => {
+};
+
+fetchCoins();

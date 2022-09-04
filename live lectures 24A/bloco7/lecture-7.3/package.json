@@ -1,0 +1,23 @@
+{
+  "name": "sd-024-a-live-lectures",
+  "version": "1.0.0",
+  "description": "## Conteúdos das aulas ao vivo da Turma 24 - Tribo A 😉 🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-024-a-live-lectures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/sd-024-a-live-lectures/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-024-a-live-lectures#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}

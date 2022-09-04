@@ -1,0 +1,6 @@
+ignore_files:
+  - .stylelintrc.json
+  - .stylelintignore
+  - .eslintignore
+  - .eslintrc.json
+  - src/tests/

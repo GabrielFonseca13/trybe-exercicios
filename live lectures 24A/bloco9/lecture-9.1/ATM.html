@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style-ATM.css" />
+    <title>Aula 9.1 - Turma 24</title>
+  </head>
+
+  <body>
+
+    <form id="painel" onsubmit="enviarForm(event)">
+      <h1>TRYBE ATM</h1>
+      <label for="valor">Valor do saque</label>
+      <input type="text" name="valor">
+      <button type="submit">SACAR</button>
+    </form>
+
+    <div class="container">
+      <div class="saldo"></div>
+    </div>
+
+    <script src="script-ATM.js"></script>
+  </body>
+</html>

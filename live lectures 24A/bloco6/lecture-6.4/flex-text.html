@@ -1,0 +1,54 @@
+<title>CSS FLEXBOX - ORDER</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        display: flex;
+        height: 200px;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+      }
+
+      .box {
+        min-height: 50px;
+        font-weight: 900;
+        font-size: x-large;
+        text-align: center;
+        flex-basis: 150px;
+      }
+
+      .one {
+        background-color: #FBD26A;
+        align-self: flex-start;
+        flex-grow: 1;
+      }
+
+      .two {
+        background-color: #FAA488;
+        flex-shrink: 0;
+        order: -1;
+      }
+
+      .three {
+        background-color: #9069EF;
+        align-self: flex-end;
+        flex-grow: 2;
+      } 
+
+      .four {
+        background-color: #00d9f6;
+        align-self: stretch;
+        flex-shrink: 2;
+        order: -2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box one">1</div>
+      <div class="box two">2</div>
+      <div class="box three">3</div>
+      <div class="box four">4</div>
+    </div>
+  </body>
+</html>
