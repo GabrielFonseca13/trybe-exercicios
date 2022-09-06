@@ -1,0 +1,15 @@
+// API ? 
+// - https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces
+// - https://github.com/public-apis/public-apis - Lista de API's publicas
+
+// JSON ? 
+// - https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON
+// - https://www.json.org/json-pt.html
+// - Exemplo acesso via CURL: curl https://viacep.com.br/ws/01001000/json/
+
+// Promise ?
+// - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+// fetch API ?
+// - https://ricardo-reis.medium.com/fetch-api-javascript-d2f0248311f6
+// - https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch
