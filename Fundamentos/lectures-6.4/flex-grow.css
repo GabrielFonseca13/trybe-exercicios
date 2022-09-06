@@ -3,6 +3,7 @@
   height: 50px;
   margin: auto;
   width: 100%;
+  border: black 3px solid;
 }
 
 .box {
@@ -15,7 +16,7 @@
   background-color: #FBD26A;
   display: flex;
   /* Altere a propriedade grow. */
-  flex-grow: 1;
+  flex-grow: 0;
   list-style: none;
 }
 
@@ -23,7 +24,7 @@
   background-color: #FAA488;
   display: flex;
   /* Altere a propriedade grow. */
-  flex-grow: 1;
+  flex-grow: 0;
   list-style: none;
 }
 
@@ -39,6 +40,6 @@
   background-color: #006472;
   display: flex;
   /* Altere a propriedade grow. */
-  flex-grow: 1;
+  flex-grow: 0;
   list-style: none;
 }
