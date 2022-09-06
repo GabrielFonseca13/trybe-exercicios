@@ -21,7 +21,7 @@
   /* align-self: flex-end; */
   /* align-self: stretch; */
   /* align-self: center; */
-  align-self: baseline;
+  /* align-self: baseline; */
   background-color: #FBD26A;
   display: flex;
   justify-content: center;
