@@ -9,6 +9,9 @@ const addCity = (city) => {
 const removeCity = (city) => {
   cities = cities.filter((eachCity) => eachCity !== city);
 };
+
+// ############## TESTE PADRÃO DO JEST ################
+
 test('Testa a função addCity', () => {
   expect.assertions(4);
   addCity('Campinas');
@@ -27,4 +30,4 @@ test('Testa a função removeCity', () => {
   expect(cities).not.toContain('Campinas');
   expect(cities).toContain('Goiania');
   expect(cities).toContain('Recife');
-});
+  
