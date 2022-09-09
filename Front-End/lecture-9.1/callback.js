@@ -1,5 +1,3 @@
-// despesas.js
-
 // Declaramos nossa variável de despesas
 const minhasDespesas = [
   {
