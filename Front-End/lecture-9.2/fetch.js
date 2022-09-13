@@ -11,17 +11,17 @@
 //######## como o fluxo assíncrono não foi controlado, ela vai retornar o seu estado e não o dado requisitado. Promise { <pending> } 
 
 
-// const fetch = require('node-fetch');
+const fetch = require('node-fetch');
 
-// const fetchJoke = () => {
-//   const url = 'https://api.chucknorris.io/jokes/random?category=dev';
+const fetchJoke = () => {
+  const url = 'https://api.chucknorris.io/jokes/random?category=dev';
 
-//   fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => console.log(data.value));
-// }
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => console.log(data.value));
+}
 
-// fetchJoke();
+fetchJoke();
 
 // ###### // ######### o .then() espera a resposta do fetch (ou o .then() anterior) ser concluída para começar a sua execução. Assim, nosso fluxo está controlado!
 
