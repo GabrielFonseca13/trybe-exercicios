@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  font-size: 44px;
+}
+ol {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+li {
+  text-decoration: none;
+  text-align: center;
+  margin: 30px;
+  font-size: 28px;
+}
+li img {
+  width: 120px;
+}
