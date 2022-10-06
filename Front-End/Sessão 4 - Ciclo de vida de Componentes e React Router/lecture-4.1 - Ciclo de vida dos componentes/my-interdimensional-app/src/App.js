@@ -14,13 +14,26 @@ class Counter extends React.Component {
     console.log("componentDidMount");
   }
 
+  // shouldComponentUpdate Original
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   console.log("shouldComponentUpdate");
+  //   return true;
+  // }
+
+  // shouldComponentUpdate atualizado para acessar o próximo state e a proxima prop
   shouldComponentUpdate(nextProps, nextState) {
-    console.log("shouldComponentUpdate");
+    console.log("shouldComponentUpdate", this.state, nextState);
     return true;
   }
 
+  // componentDidUpdate original 
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log("componentDidUpdate");
+  // }
+
+  // componentDidUpdate atualizado para acessar o state anterior e a prop anterior
   componentDidUpdate(prevProps, prevState) {
-    console.log("componentDidUpdate");
+    console.log("componentDidUpdate", this.state, prevState);
   }
 
   render() {
@@ -42,7 +55,7 @@ class Counter extends React.Component {
 export default Counter;
 
 
-// App.js EX 1 ################
+// App.js EX 2 ################
 // import React, { Component } from 'react';
 // import './App.css';
 
@@ -86,7 +99,7 @@ export default Counter;
 
 // export default App;
 
-// EX 2 ##########################################
+// EX 3 ##########################################
 
 // import React from 'react';
 // import Joke from './components/Jokeg';
