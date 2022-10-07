@@ -1,61 +1,62 @@
-// EX Course 1 ##############
-import React from "react";
+// // EX Course 1 ##############
+// import React from "react";
 
-class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: 0
-    };
-    console.log("construtor");
-  }
+// class Counter extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       counter: 0
+//     };
+//     console.log("construtor");
+//   }
 
-  componentDidMount() {
-    console.log("componentDidMount");
-  }
+//   componentDidMount() {
+//     console.log("componentDidMount");
+//   }
 
-  // shouldComponentUpdate Original
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   console.log("shouldComponentUpdate");
-  //   return true;
-  // }
+//   // shouldComponentUpdate Original
+//   // shouldComponentUpdate(nextProps, nextState) {
+//   //   console.log("shouldComponentUpdate");
+//   //   return true;
+//   // }
 
-  // shouldComponentUpdate atualizado para acessar o próximo state e a proxima prop
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log("shouldComponentUpdate", this.state, nextState);
-    return true;
-  }
+//   // shouldComponentUpdate atualizado para acessar o próximo state e a proxima prop
+//   shouldComponentUpdate(nextProps, nextState) {
+//     console.log("shouldComponentUpdate", this.state, nextState);
+//     return true;
+//   }
 
-  // componentDidUpdate original 
-  // componentDidUpdate(prevProps, prevState) {
-  //   console.log("componentDidUpdate");
-  // }
+//   // componentDidUpdate original
+//   // componentDidUpdate(prevProps, prevState) {
+//   //   console.log("componentDidUpdate");
+//   // }
 
-  // componentDidUpdate atualizado para acessar o state anterior e a prop anterior
-  componentDidUpdate(prevProps, prevState) {
-    console.log("componentDidUpdate", this.state, prevState);
-  }
+//   // componentDidUpdate atualizado para acessar o state anterior e a prop anterior
+//   componentDidUpdate(prevProps, prevState) {
+//     console.log("componentDidUpdate", this.state, prevState);
+//   }
 
-  render() {
-    console.log("render");
-    return (
-      <div>
-        <p>Contador</p>
-        <button
-          onClick={() => this.setState((state) => ({ counter: state.counter + 1 }))}
-        >
-          Soma
-        </button>
-        <p>{this.state.counter}</p>
-      </div>
-    );
-  }
-}
+//   render() {
+//     console.log("render");
+//     return (
+//       <div>
+//         <p>Contador</p>
+//         <button
+//           onClick={() => this.setState((state) => ({ counter: state.counter + 1 }))}
+//         >
+//           Soma
+//         </button>
+//         <p>{this.state.counter}</p>
+//       </div>
+//     );
+//   }
+// }
 
-export default Counter;
-
+// export default Counter;
 
 // App.js EX 2 ################
+// App.js
+
 // import React, { Component } from 'react';
 // import './App.css';
 
@@ -67,7 +68,11 @@ export default Counter;
 //     };
 //   }
 
-//   componentDidMount() {
+//   componentDidMount(){
+//     this.fetchCharacters();
+//   }
+
+//   fetchCharacters = () => {
 //     fetch('https://rickandmortyapi.com/api/character')
 //     .then(response => response.json())
 //     .then(data => {
@@ -99,71 +104,18 @@ export default Counter;
 
 // export default App;
 
-// EX 3 ##########################################
+// Exercicio Dad Joke ###############
 
-// import React from 'react';
-// import Joke from './components/Jokeg';
+import React from 'react';
+import DadJoke from './components/DadJoke';
 
-// class DadJoke extends React.Component {
-//   constructor() {
-//     super();
+class App extends React.Component {
+  render() {
+    return <div>
+      <h1>PIADAS</h1>
+      <DadJoke />
+    </div>;
+  }
+}
 
-//     this.saveJoke = this.saveJoke.bind(this);
-
-//     this.state = {
-//       jokeObj: undefined,
-//       loading: true,
-//       storedJokes: [],
-//     }
-//   }
-
-//   async fetchJoke() {
-//     this.setState(
-//       { loading: true }, // Primeiro parâmetro da setState()!
-//       async () => {
-//       const requestHeaders = { headers: { Accept: 'application/json' } }
-//       const requestReturn = await fetch('https://icanhazdadjoke.com/', requestHeaders)
-//       const requestObject = await requestReturn.json();
-//       this.setState({
-//         loading: false,
-//         jokeObj: requestObject
-//       });
-//     });
-//   }
-
-//   componentDidMount() {
-//     this.fetchJoke();
-//   }
-
-//   saveJoke() {
-//     this.setState(({ storedJokes, jokeObj }) => ({
-//       storedJokes: [...storedJokes, jokeObj]
-//     }));
-
-//     this.fetchJoke();
-//   }
-
-//   render() {
-//     const { storedJokes, loading, jokeObj } = this.state;
-//     const loadingElement = <span>Loading...</span>;
-
-//     return (
-//       <div>
-//         <span>
-//           {storedJokes.map(({ id, joke }) => (<p key={id}>{joke}</p>))}
-//         </span>
-
-//       <p>
-//         {
-//           loading 
-//             ? loadingElement
-//             : <Joke jokeObj={jokeObj} saveJoke={this.saveJoke} />
-//         }
-//       </p>
-
-//       </div>
-//     );
-//   }
-// }
-
-// export default DadJoke;
+export default App;
