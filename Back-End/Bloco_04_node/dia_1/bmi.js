@@ -54,7 +54,7 @@ const main = () => {
   const imc = imcCalc(peso, altura);
   const statusImc = verificaSituacaoImc(imc);
   console.log(`IMC = ${imc.toFixed(2)}`)
-  console.log(`status Imc: ${statusImc}`)
+  console.log(`Status Imc: ${statusImc}`)
 }
 
 main();
