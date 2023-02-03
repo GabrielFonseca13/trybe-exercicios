@@ -4,8 +4,13 @@
   "description": "Exercicios do dia 4.1 B.E",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node bmi.js"
   },
   "author": "Gabriel Fonseca",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "1.4.10"
+  }
 }
