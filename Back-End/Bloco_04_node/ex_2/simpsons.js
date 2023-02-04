@@ -40,11 +40,33 @@ const createNewJson = async () => {
   await fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsonFamily));
 }
 
+// E - Crie uma função que adicione ao arquivo simpsonFamily.json o personagem Nelson Muntz.
+
+const includesNelson = async() => {
+  const fileContent = await fs.readFile('./simpsonFamily.json', UTF_8);
+  const convertFile = JSON.parse(fileContent);
+  convertFile.push({id: '8', name: 'Nelson Muntz'});
+  await fs.writeFile('./simpsonFamily.json', JSON.stringify(convertFile));
+};
+
+// Crie uma função que substitua o personagem Nelson Muntz pela personagem Maggie Simpson no
+// arquivo simpsonFamily.json.
+
+const updateSimpsonFamily = async() => {
+  const fileContent = await fs.readFile('./simpsonFamily.json', UTF_8);
+  const simpsonFamily = JSON.parse(fileContent);
+  const removeNelson = simpsonFamily.filter((simpson) => simpson.id !== '8')
+  removeNelson.push({id:'5',name:'Maggie Simpson'});
+  await fs.writeFile('./simpsonFamily.json', JSON.stringify(removeNelson));
+}
+
 const main = () => {
   // readAll();
   // searchSimpsonById(15);
   // filterSimpson();
-  createNewJson();
+  // createNewJson();
+  // includesNelson();
+  updateSimpsonFamily();
 }
 
 main();
