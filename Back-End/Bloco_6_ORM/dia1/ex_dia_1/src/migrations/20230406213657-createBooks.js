@@ -18,15 +18,15 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING,
       },
-      pageQuantity: {
-        allowNull: false,
+      page_quantity: {
+        allowNull: true,
         type: Sequelize.INTEGER,
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },
