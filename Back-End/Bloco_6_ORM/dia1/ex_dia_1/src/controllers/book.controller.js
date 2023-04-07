@@ -43,6 +43,18 @@ const updateBook = async(req,res) => {
     console.log(error.message);
     return res.status(500).json({message: 'Ocorreu um erro'});
   }
+};
+
+const removeBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const removedBook = await bookService.removeBook(id);
+    if(!updateBook) return res.status(404).json({message: "Book not found"});
+    return res.status(200).json({message:"Book deleted"});
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).json({message: 'Ocorreu um erro'});
+  }
 }
 
 module.exports = {
@@ -50,4 +62,5 @@ module.exports = {
   getBookById,
   createBook,
   updateBook,
+  removeBook,
 };
