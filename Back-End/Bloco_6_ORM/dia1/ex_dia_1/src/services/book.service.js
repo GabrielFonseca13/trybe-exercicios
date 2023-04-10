@@ -12,14 +12,14 @@ const getBookById = async (id) => {
   return book;
 };
 
-const createBook = async ({title, author, pageQuantity}) => {
-  const newBook = await Book.create({title, author, pageQuantity});
+const createBook = async ({title, author, pageQuantity, publisher}) => {
+  const newBook = await Book.create({title, author, pageQuantity, publisher});
   return newBook;
 };
 
-const updateBook = async (id, {title, author,pageQuantity}) => {
+const updateBook = async (id, {title, author,pageQuantity, publisher}) => {
   const [updatedBook] = await Book.update({ 
-    title, author, pageQuantity
+    title, author, pageQuantity, publisher
   } ,{ where: {id} });
   return updatedBook
 }

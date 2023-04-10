@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "env $(cat .env) nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/**/*$NAME*.test.js --exit"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,8 @@
     "sequelize": "6.3.4"
   },
   "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "10.0.0",
     "sequelize-cli": "6.2.0"
   }
 }
