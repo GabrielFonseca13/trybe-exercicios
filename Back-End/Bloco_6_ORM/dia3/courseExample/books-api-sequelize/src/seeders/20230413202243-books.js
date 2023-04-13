@@ -1,5 +1,3 @@
-// cole esse código dentro do arquivo da seed "books"
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert(
