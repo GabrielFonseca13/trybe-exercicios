@@ -1,4 +1,4 @@
-var readline = require('readline-sync'); // importamos o pacote readline-sync
+var readlineVolume = require('readlineVolume-sync'); // importamos o pacote readlineVolume-sync
 var units = ['km³', 'hm³', 'dam³', 'm³', 'dm³', 'cm³', 'mm³'];
 function convert(value, fromUnit, toUnit) {
     var fromIndex = units.indexOf(fromUnit); // pegamos o index da unidade base no array
@@ -8,11 +8,11 @@ function convert(value, fromUnit, toUnit) {
 }
 function exec() {
     // pegamos o valor a ser convertido digitado pela pessoa usuária
-    var value = readline.questionFloat('Digite o valor a ser convertido: \n');
+    var value = readlineVolume.questionFloat('Digite o valor a ser convertido: \n');
     // pedimos que a pessoa usuária escolha a unidade base
-    var fromUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a unidade base:');
+    var fromUnitChoiceIndex = readlineVolume.keyInSelect(units, 'Escolha um número para a unidade base:');
     // pedimos que a pessoa usuária escolha a unidade para conversão
-    var toUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a conversão:');
+    var toUnitChoiceIndex = readlineVolume.keyInSelect(units, 'Escolha um número para a conversão:');
     var toUnitChoice = units[toUnitChoiceIndex];
     var fromUnitChoice = units[fromUnitChoiceIndex];
     // Se o usuário escolher a opção 0 (cancelar), uma mensagem é impressa no terminal e usamos o return para encerrar a execução

@@ -1,34 +1,34 @@
-const readline = require('readline-sync'); // importamos o pacote readline-sync
-const units = ['km²', 'hm²', 'dam²', 'm²', 'dm²', 'cm²', 'mm²'];
+const readlineArea = require('readline-sync'); // importamos o pacote readlineArea-sync
+const areaUnits = ['km²', 'hm²', 'dam²', 'm²', 'dm²', 'cm²', 'mm²'];
 
-function convert(value: number, fromUnit: string, toUnit: string): number {
-  const fromIndex = units.indexOf(fromUnit); // pegamos o index da unidade base no array
-  const toIndex = units.indexOf(toUnit); // pegamos o index da unidade para a conversão
+function areaConvert(value: number, fromUnit: string, toUnit: string): number {
+  const fromIndex = areaUnits.indexOf(fromUnit); // pegamos o index da unidade base no array
+  const toIndex = areaUnits.indexOf(toUnit); // pegamos o index da unidade para a conversão
   const exponent = toIndex - fromIndex; // calculamos o expoente a partir da diferença dos index
 
   return value * Math.pow(100, exponent);
 }
 
-function exec() {
+function areaexec() {
   // pegamos o valor a ser convertido digitado pela pessoa usuária
-  const value = readline.questionFloat('Digite o valor a ser convertido: \n');
+  const value = readlineArea.questionFloat('Digite o valor a ser convertido: \n');
 
   // pedimos que a pessoa usuária escolha a unidade base
-  const fromUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a unidade base:');
+  const fromUnitChoiceIndex = readlineArea.keyInSelect(areaUnits, 'Escolha um número para a unidade base:');
 
   // pedimos que a pessoa usuária escolha a unidade para conversão
-  const toUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a conversão:');
+  const toUnitChoiceIndex = readlineArea.keyInSelect(areaUnits, 'Escolha um número para a conversão:');
 
-  const toUnitChoice = units[toUnitChoiceIndex];
-  const fromUnitChoice = units[fromUnitChoiceIndex];
+  const toUnitChoice = areaUnits[toUnitChoiceIndex];
+  const fromUnitChoice = areaUnits[fromUnitChoiceIndex];
 
-  // Se o usuário escolher a opção 0 (cancelar), uma mensagem é impressa no terminal e usamos o return para encerrar a execução
+  // Se o usuário escolher a opção 0 (cancelar), uma mensagem é impressa no terminal e usamos o return para encerrar a areaexecução
   if (!fromUnitChoice || !toUnitChoice) {
     console.log(`Função cancelada`);
     return 0;
   }
 
-  const result = convert(value, fromUnitChoice, toUnitChoice);
+  const result = areaConvert(value, fromUnitChoice, toUnitChoice);
 
   // montamos a mensagem de saída
   const message = `${value}${fromUnitChoice} é igual a ${result}${toUnitChoice}`;
@@ -37,4 +37,4 @@ function exec() {
   console.log(message);
 }
 
-exec();
+areaexec();
