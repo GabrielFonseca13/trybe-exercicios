@@ -1,23 +1,43 @@
+// ./length.ts
+// lembrete: mudar o array units e a base para o cálculo em cada arquivo!
 
-const capacityUnits: string[] = ['kl', 'hl', 'dal', 'l', 'dl', 'cl', 'ml'];
+const readline = require('readline-sync'); // importamos o pacote readline-sync
+const units = ['kl', 'hl', 'dal', 'l', 'dl', 'cl', 'ml'];
 
-function capacityConvert(valor: number, unidadeBase: string, unidadeParaConversao: string): number {
-  const indexRef = capacityUnits.indexOf(unidadeBase);
-  console.log('indexRef', indexRef);
+function convert(value: number, fromUnit: string, toUnit: string): number {
+  const fromIndex = units.indexOf(fromUnit); // pegamos o index da unidade base no array
+  const toIndex = units.indexOf(toUnit); // pegamos o index da unidade para a conversão
+  const exponent = toIndex - fromIndex; // calculamos o expoente a partir da diferença dos index
 
-  const indexConv = capacityUnits.indexOf(unidadeParaConversao);
-  console.log('indexConv', indexConv);
+  return value * Math.pow(10, exponent);
+}
 
-  const exponente = indexRef - indexConv;
+function exec() {
+  // pegamos o valor a ser convertido digitado pela pessoa usuária
+  const value = readline.questionFloat('Digite o valor a ser convertido: \n');
 
-  return valor * Math.pow(10, exponente);
-};
+  // pedimos que a pessoa usuária escolha a unidade base
+  const fromUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a unidade base:');
 
-capacityConvert(10, 'kl', 'l');
-capacityConvert(10, 'hl', 'l');
-capacityConvert(10, 'dal', 'l');
-capacityConvert(10, 'l', 'l');
-capacityConvert(10, 'dl', 'l');
-capacityConvert(10, 'cl', 'l');
-capacityConvert(10, 'ml', 'l');
+  // pedimos que a pessoa usuária escolha a unidade para conversão
+  const toUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a conversão:');
 
+  const toUnitChoice = units[toUnitChoiceIndex];
+  const fromUnitChoice = units[fromUnitChoiceIndex];
+
+  // Se o usuário escolher a opção 0 (cancelar), uma mensagem é impressa no terminal e usamos o return para encerrar a execução
+  if (!fromUnitChoice || !toUnitChoice) {
+    console.log(`Função cancelada`);
+    return 0;
+  }
+
+  const result = convert(value, fromUnitChoice, toUnitChoice);
+
+  // montamos a mensagem de saída
+  const message = `${value}${fromUnitChoice} é igual a ${result}${toUnitChoice}`;
+
+  // printamos a mensagem de saída no terminal
+  console.log(message);
+}
+
+exec();

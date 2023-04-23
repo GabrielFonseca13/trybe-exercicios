@@ -1,4 +1,6 @@
 // ./length.ts
+// lembrete: mudar o array units e a base para o cálculo em cada arquivo!
+var readline = require('readline-sync'); // importamos o pacote readline-sync
 var units = ['km', 'hm', 'dam', 'm', 'dm', 'cm', 'mm'];
 function convert(value, fromUnit, toUnit) {
     var fromIndex = units.indexOf(fromUnit); // pegamos o index da unidade base no array
@@ -6,10 +8,24 @@ function convert(value, fromUnit, toUnit) {
     var exponent = toIndex - fromIndex; // calculamos o expoente a partir da diferença dos index
     return value * Math.pow(10, exponent);
 }
-convert(10, 'km', 'm');
-convert(10, 'hm', 'm');
-convert(10, 'dam', 'm');
-convert(10, 'm', 'm');
-convert(10, 'dm', 'm');
-convert(10, 'cm', 'm');
-convert(10, 'mm', 'm');
+function exec() {
+    // pegamos o valor a ser convertido digitado pela pessoa usuária
+    var value = readline.questionFloat('Digite o valor a ser convertido: \n');
+    // pedimos que a pessoa usuária escolha a unidade base
+    var fromUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a unidade base:');
+    // pedimos que a pessoa usuária escolha a unidade para conversão
+    var toUnitChoiceIndex = readline.keyInSelect(units, 'Escolha um número para a conversão:');
+    var toUnitChoice = units[toUnitChoiceIndex];
+    var fromUnitChoice = units[fromUnitChoiceIndex];
+    // Se o usuário escolher a opção 0 (cancelar), uma mensagem é impressa no terminal e usamos o return para encerrar a execução
+    if (!fromUnitChoice || !toUnitChoice) {
+        console.log("Fun\u00E7\u00E3o cancelada");
+        return 0;
+    }
+    var result = convert(value, fromUnitChoice, toUnitChoice);
+    // montamos a mensagem de saída
+    var message = "" + value + fromUnitChoice + " \u00E9 igual a " + result + toUnitChoice;
+    // printamos a mensagem de saída no terminal
+    console.log(message);
+}
+exec();
