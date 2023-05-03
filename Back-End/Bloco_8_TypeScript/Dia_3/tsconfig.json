@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "rootDir": "./express-typescript",
+    "outDir": "./express-typescript/dist",
+    "esModuleInterop": true,
+    "strict": true
+  }
+}

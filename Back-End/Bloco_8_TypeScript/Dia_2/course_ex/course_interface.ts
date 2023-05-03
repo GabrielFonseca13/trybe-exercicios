@@ -1,5 +1,3 @@
-import { arch } from "os";
-
 interface Employee {
   firstName: string;
   lastName: string;

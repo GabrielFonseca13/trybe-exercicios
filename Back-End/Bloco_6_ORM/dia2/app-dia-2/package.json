@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "env $(cat .env) nodemon src/server.js",
-    "db:restore": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all"
+    "db:restore": "env $(cat .env) npx sequelize db:drop && env $(cat .env) npx sequelize db:create && env $(cat .env) npx sequelize db:migrate && env $(cat .env) npx sequelize db:seed:all"
   },
   "keywords": [],
   "author": "",
