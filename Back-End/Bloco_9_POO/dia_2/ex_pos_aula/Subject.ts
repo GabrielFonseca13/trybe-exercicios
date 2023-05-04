@@ -20,6 +20,8 @@ class Subject {
   }
 }
 
+export default Subject;
+
 const newSbuject = new Subject('Geografia');
 // const invalidNewSubject = new Subject('Os');
 
