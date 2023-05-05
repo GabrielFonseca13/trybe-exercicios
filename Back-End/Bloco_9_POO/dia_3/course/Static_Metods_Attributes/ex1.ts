@@ -39,11 +39,7 @@ class LongRangeCharacter2 extends Character2 {
 const yoshi2 = new MelleCharacter2('Yoshi', 'Super Dragon');
 const samus2 = new LongRangeCharacter2('Samus', 'Zero Laser');
 
-// const chars = (char: Character2) => {
-//   char.talk();
-//   char.specialMove();
-// }
-
 Character2.characterPresentation(yoshi2);
 Character2.characterPresentation(samus2);
 
+export default Character2

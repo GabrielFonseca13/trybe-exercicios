@@ -1,5 +1,5 @@
 abstract class Character {
-  abstract talk(): void;
+  abstract talk2(): void;
   abstract specialMove(): void;
 };
 
@@ -8,7 +8,7 @@ class MelleCharacter extends Character {
     super();
   }
 
-  talk(): void {
+  talk2(): void {
     console.log(`Hi I'm ${this._name} i cant attack from a long reange.`);
   }
 
@@ -22,7 +22,7 @@ class LongRangeCharacter extends Character {
     super();
   }
 
-  talk(): void {
+  talk2(): void {
     console.log(`Hi I'm ${this._name} i can attack from a long reange.`);
   }
 
@@ -35,7 +35,7 @@ const yoshi = new MelleCharacter('Yoshi', 'Super Dragon');
 const samus = new LongRangeCharacter('Samus', 'Zero Laser');
 
 const chars = (char: Character) => {
-  char.talk();
+  char.talk2();
   char.specialMove();
 }
 
