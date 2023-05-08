@@ -1,3 +1,8 @@
+type School = {
+  name: string;
+  approvalGrade: number;
+};
+
 type Discipline = {
   name: string;
   grade: number;
@@ -7,7 +12,7 @@ type Discipline = {
 type Student = {
   name: string;
   disciplines: Discipline[];
-  school?: string;
+  school: School; // Agora não é mais uma string
 };
 
 /* Apoio para a função `getGradeLetter` */
@@ -39,8 +44,8 @@ const percentageGradesIntoLetters = (student: Student): Student => ({
 });
 
 /* "Determinar" */
-const approvedStudents = ({ disciplines }: Student): boolean =>
-  disciplines.every(({ grade }) => grade > 0.7);
+const approvedStudents = ({ disciplines, school }: Student): boolean =>
+  disciplines.every(({ grade }) => grade >= school.approvalGrade);
 
 /* "Atualizar" */
 const updateApprovalData = (student: Student): void => {
@@ -56,6 +61,27 @@ function setApproved(students: Student[]): void {
     .filter(approvedStudents)
     .map(updateApprovalData);
 }
+
+const studentsExample = [
+  {
+    name: 'Lee',
+    school: { name: 'Standard', approvalGrade: 0.7 },
+    disciplines: [
+      { name: 'matemática', grade: 0.8 },
+      { name: 'história', grade: 0.9 },
+    ],
+  },
+  {
+    name: 'Albus',
+    school: { name: 'Hogwarts', approvalGrade: 0.8 },
+    disciplines: [
+      { name: 'divination', grade: 0.8 },
+      { name: 'potions', grade: 0.9 },
+    ],
+  },
+];
+
+setApproved(studentsExample);
 
 export {
   percentageGradesIntoLetters,
