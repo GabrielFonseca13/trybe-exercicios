@@ -4,7 +4,6 @@
 #     print(file.closed)
 # # como estamos FORA do contexto, o arquivo está FECHADO (file.closed = True)
 # print(file.closed)
-
 # with open("arquivo2.txt", "w") as file:
 #     file.write("nome idade\n")
 
