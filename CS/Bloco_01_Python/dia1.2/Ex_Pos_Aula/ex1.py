@@ -5,4 +5,6 @@ def vertical_inverted_name(word):
         print()
 
 
-vertical_inverted_name("PEDRO")
+if __name__ == "__main__":
+    name = input("DIGITE UM NOME: ")
+    vertical_inverted_name(name)
