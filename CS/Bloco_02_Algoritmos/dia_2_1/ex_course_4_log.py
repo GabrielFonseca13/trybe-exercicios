@@ -7,7 +7,7 @@ def binary_search(numbers, target):
 
     while (
         start <= end
-    ):  # os índices podem ser no máximo iguais, o início não pode ultrapassar o fim
+    ):  # os índices podem ser no máx iguais, o início n pode ser maio q o fim
         mid = (start + end) // 2  # encontro o meio
 
         if (
