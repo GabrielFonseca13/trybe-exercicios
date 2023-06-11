@@ -13,7 +13,8 @@ def bubble_sort(numbers):
                 numbers[item + 1] = current_element
 
                 # Lembra da troca com desempacotamento?
-                # numbers[item], numbers[item + 1] = numbers[item + 1], numbers[item]
+                # numbers[item], numbers[item + 1] = numbers[item + 1],
+                # numbers[item]
     return numbers
 
 
