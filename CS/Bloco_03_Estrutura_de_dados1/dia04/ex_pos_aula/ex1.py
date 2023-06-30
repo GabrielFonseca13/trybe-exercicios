@@ -6,22 +6,51 @@
 # e Node e utilizar seus métodos de acesso para simular uma fila,
 # respeitando o padrão FIFO.
 
-import LinkedList
-import Node
-
 
 class Queue:
     def __init__(self):
-        self.__data = LinkedList()
-
-    def is_empty(self):
-        return not len(self.__data)
+        self.queue = list()
 
     def enqueue(self, value):
-        return self.__data.insert_last(value)
+        self.queue.append(value)
 
-    def dequeu(self):
-        return self.__data.remove_first()
+    def dequeue(self):
+        # Se não houver mais itens na fila, o método retornará None
+        if len(self.queue) == 0:
+            return None
+        # O método pop remove e retorna o valor do índice fornecido
+        return self.queue.pop(0)
 
-    def peek(self):
-        return self.__data.get_element_at(0)
+
+def __str__(self):
+    str_items = ""
+    for i in range(len(self._data)):
+        value = self._data[i]
+        str_items += str(value)
+        if i + 1 < len(self._data):
+            str_items += ", "
+
+    return "Queue(" + str_items + ")"
+
+
+if __name__ == "__main__":
+    elements = ["Milkshake", "Batata Frita", "Refrigerante"]
+    content_queue = Queue()
+
+    print(content_queue)
+    # Saída: Queue()
+
+    for elem in elements:
+        content_queue.enqueue(elem)
+
+    print(content_queue)
+    # Saída: Queue(Milkshake, Batata Frita, Refrigerante)
+
+    content_queue.dequeue()
+    print(content_queue)
+    # Saída: Queue(Batata Frita, Refrigerante)
+
+    print(content_queue.dequeue())
+    # Saída: Batata Frita
+    # porque "Milkshake" já foi removido e "Batata Frita" se tornou o primeiro
+    # elemento da fila
