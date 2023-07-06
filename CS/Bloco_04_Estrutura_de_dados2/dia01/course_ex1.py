@@ -23,6 +23,11 @@ class HashMap:
         address = self.get_address(id_num)
         return self._buckets[address] is not None
 
+    def update_value(self, id_num, new_value):
+        address = self.get_address(id_num)
+        employee = self._buckets[address]
+        employee.name = new_value
+
 
 if __name__ == "__main__":
     employees = [(14, "name1"), (23, "name2"), (10, "name3"), (9, "name4")]
@@ -33,3 +38,7 @@ if __name__ == "__main__":
         registry.insert(employee)
 
     print(registry.get_value(23))
+
+    print(registry.get_value(10))
+    registry.update_value(10, "name30")
+    print(registry.get_value(10))
