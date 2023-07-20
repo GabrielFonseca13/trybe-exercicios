@@ -12,13 +12,25 @@
 // }
 
 // cast EXPLICITO
+// public class Program
+// {
+//   public static void Main()
+//   {
+//     long someLongNumber = 516144564564654;
+//     int intNumber = (int)someLongNumber;
+
+//     Console.WriteLine(intNumber);
+//   }
+// }
+
+// CONVERTENDO STRING PARA NUMEROS
 public class Program
 {
   public static void Main()
   {
-    long someLongNumber = 516144564564654;
-    int intNumber = (int)someLongNumber;
+    string someString = "42";
+    int convertInt = Convert.ToInt32(someString);
 
-    Console.WriteLine(intNumber);
+    Console.WriteLine(convertInt);
   }
 }
