@@ -1,0 +1,15 @@
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.csproj.AssemblyReference.cache
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.AssemblyInfoInputs.cache
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.AssemblyInfo.cs
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.csproj.CoreCompileInputs.cache
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/bin/Debug/net6.0/dia3
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/bin/Debug/net6.0/dia3.deps.json
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/bin/Debug/net6.0/dia3.runtimeconfig.json
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/bin/Debug/net6.0/dia3.dll
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/bin/Debug/net6.0/ref/dia3.dll
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/bin/Debug/net6.0/dia3.pdb
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.dll
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/ref/dia3.dll
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.pdb
+/home/gabriel/Trybe/trybe-exercicios/C#/sessao1/dia3/dia3/obj/Debug/net6.0/dia3.genruntimeconfig.cache
